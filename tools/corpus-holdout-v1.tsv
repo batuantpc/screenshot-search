@@ -1,0 +1,230 @@
+# Project Memento - dondurulmus web holdout v1
+# 224 ornek = 16 topic x 14. Eski 122 ornekten tamamen ayridir.
+# Bu manifest ilk baseline alinmadan siniflandirici kurallarini ayarlamak icin KULLANILMAZ.
+# Internetten otomatik cekimde kullanicinin kaydetme amaci bilinemez; intent bu yuzden "-".
+# sensitive=false: tamamı kamuya acik web sayfasi, gercek kisisel veri yok.
+id	url	topic	intent	sensitive	note
+h1-recipe-01	https://tr.wikipedia.org/wiki/%C4%B0mambay%C4%B1ld%C4%B1	RECIPE	-	false	tr yemek
+h1-recipe-02	https://tr.wikipedia.org/wiki/Mant%C4%B1	RECIPE	-	false	tr yemek
+h1-recipe-03	https://tr.wikipedia.org/wiki/Lahmacun	RECIPE	-	false	tr yemek
+h1-recipe-04	https://tr.wikipedia.org/wiki/Simit_(yiyecek)	RECIPE	-	false	tr yemek
+h1-recipe-05	https://en.wikipedia.org/wiki/Dolma	RECIPE	-	false	dish
+h1-recipe-06	https://tr.wikipedia.org/wiki/Kuru_fasulye	RECIPE	-	false	tr yemek
+h1-recipe-07	https://tr.wikipedia.org/wiki/Ezogelin_%C3%A7orbas%C4%B1	RECIPE	-	false	tr yemek
+h1-recipe-08	https://en.wikipedia.org/wiki/Risotto	RECIPE	-	false	en dish
+h1-recipe-09	https://en.wikipedia.org/wiki/Tiramisu	RECIPE	-	false	en dessert
+h1-recipe-10	https://en.wikipedia.org/wiki/Ratatouille	RECIPE	-	false	en dish
+h1-recipe-11	https://en.wikipedia.org/wiki/Ramen	RECIPE	-	false	en dish
+h1-recipe-12	https://en.wikipedia.org/wiki/Cheesecake	RECIPE	-	false	en dessert
+h1-recipe-13	https://yemek.com/tarif/sutlac/	RECIPE	-	false	tr recipe site
+h1-recipe-14	https://www.bbcgoodfood.com/recipes/brilliant-banana-loaf	RECIPE	-	false	en recipe site
+h1-movie-01	https://en.wikipedia.org/wiki/The_Godfather	MOVIE	-	false	classic film
+h1-movie-02	https://en.wikipedia.org/wiki/The_Matrix	MOVIE	-	false	scifi film
+h1-movie-03	https://en.wikipedia.org/wiki/Spirited_Away	MOVIE	-	false	animation film
+h1-movie-04	https://en.wikipedia.org/wiki/Whiplash_(2014_film)	MOVIE	-	false	drama film
+h1-movie-05	https://en.wikipedia.org/wiki/Arrival_(film)	MOVIE	-	false	scifi film
+h1-movie-06	https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once	MOVIE	-	false	film
+h1-movie-07	https://en.wikipedia.org/wiki/Inception	MOVIE	-	false	film
+h1-movie-08	https://tr.wikipedia.org/wiki/Hababam_S%C4%B1n%C4%B1f%C4%B1_(film)	MOVIE	-	false	tr film
+h1-movie-09	https://tr.wikipedia.org/wiki/Ahlat_A%C4%9Fac%C4%B1_(film)	MOVIE	-	false	tr film
+h1-movie-10	https://tr.wikipedia.org/wiki/Kelebe%C4%9Fin_R%C3%BCyas%C4%B1	MOVIE	-	false	tr film
+h1-movie-11	https://www.themoviedb.org/movie/550-fight-club	MOVIE	-	false	movie database
+h1-movie-12	https://letterboxd.com/film/the-social-network/	MOVIE	-	false	film community
+h1-movie-13	https://www.criterion.com/films/165-seven-samurai	MOVIE	-	false	film catalog
+h1-movie-14	https://mubi.com/en/tr/films/perfect-days	MOVIE	-	false	streaming catalog
+h1-series-01	https://en.wikipedia.org/wiki/Succession_(TV_series)	SERIES	-	false	tv series
+h1-series-02	https://en.wikipedia.org/wiki/The_Office_(American_TV_series)	SERIES	-	false	tv series
+h1-series-03	https://en.wikipedia.org/wiki/Dark_(TV_series)	SERIES	-	false	tv series
+h1-series-04	https://en.wikipedia.org/wiki/Friends	SERIES	-	false	tv series
+h1-series-05	https://en.wikipedia.org/wiki/Black_Mirror	SERIES	-	false	tv series
+h1-series-06	https://en.wikipedia.org/wiki/Chernobyl_(miniseries)	SERIES	-	false	miniseries
+h1-series-07	https://en.wikipedia.org/wiki/The_Last_of_Us_(TV_series)	SERIES	-	false	tv adaptation
+h1-series-08	https://tr.wikipedia.org/wiki/Masum_(dizi)	SERIES	-	false	tr series
+h1-series-09	https://tr.wikipedia.org/wiki/%C5%9Eahsiyet_(dizi)	SERIES	-	false	tr series
+h1-series-10	https://tr.wikipedia.org/wiki/Yarg%C4%B1_(dizi)	SERIES	-	false	tr series
+h1-series-11	https://www.tvmaze.com/shows/2/person-of-interest	SERIES	-	false	tv database
+h1-series-12	https://www.rottentomatoes.com/tv/only_murders_in_the_building	SERIES	-	false	tv reviews
+h1-series-13	https://www.themoviedb.org/tv/1438-the-wire	SERIES	-	false	tv database
+h1-series-14	https://tv.apple.com/us/show/ted-lasso/umc.cmc.vtoh0mn0xn7t3c643xqonfzy	SERIES	-	false	streaming series page
+h1-news-01	https://www.cbsnews.com/	NEWS	-	false	general news
+h1-news-02	https://apnews.com/	NEWS	-	false	general news
+h1-news-03	https://www.aljazeera.com/	NEWS	-	false	general news
+h1-news-04	https://www.france24.com/en/	NEWS	-	false	general news
+h1-news-05	https://www.euronews.com/	NEWS	-	false	general news
+h1-news-06	https://www.npr.org/sections/news/	NEWS	-	false	general news
+h1-news-07	https://edition.cnn.com/	NEWS	-	false	general news
+h1-news-08	https://www.trthaber.com/	NEWS	-	false	tr general news
+h1-news-09	https://www.haberturk.com/	NEWS	-	false	tr general news
+h1-news-10	https://www.sozcu.com.tr/	NEWS	-	false	tr general news
+h1-news-11	https://www.cumhuriyet.com.tr/	NEWS	-	false	tr general news
+h1-news-12	https://www.gazeteduvar.com.tr/	NEWS	-	false	tr general news
+h1-news-13	https://www.diken.com.tr/	NEWS	-	false	tr general news
+h1-news-14	https://bianet.org/	NEWS	-	false	tr general news
+h1-politics-01	https://www.tbmm.gov.tr/	POLITICS	-	false	public parliament
+h1-politics-02	https://www.ysk.gov.tr/	POLITICS	-	false	public election authority
+h1-politics-03	https://www.europarl.europa.eu/portal/en	POLITICS	-	false	public parliament
+h1-politics-04	https://www.un.org/en/	POLITICS	-	false	international institution
+h1-politics-05	https://www.nato.int/	POLITICS	-	false	international institution
+h1-politics-06	https://en.wikipedia.org/wiki/Politics_of_Turkey	POLITICS	-	false	politics overview
+h1-politics-07	https://tr.wikipedia.org/wiki/T%C3%BCrkiye_Cumhuriyeti_Anayasas%C4%B1	POLITICS	-	false	constitution
+h1-politics-08	https://en.wikipedia.org/wiki/European_Union	POLITICS	-	false	political union
+h1-politics-09	https://en.wikipedia.org/wiki/United_Nations_General_Assembly	POLITICS	-	false	political institution
+h1-politics-10	https://en.wikipedia.org/wiki/2024_United_States_presidential_election	POLITICS	-	false	election
+h1-politics-11	https://tr.wikipedia.org/wiki/Adalet_ve_Kalk%C4%B1nma_Partisi	POLITICS	-	false	political party
+h1-politics-12	https://tr.wikipedia.org/wiki/Cumhuriyet_Halk_Partisi	POLITICS	-	false	political party
+h1-politics-13	https://en.wikipedia.org/wiki/Labour_Party_(UK)	POLITICS	-	false	political party
+h1-politics-14	https://en.wikipedia.org/wiki/Democratic_Party_(United_States)	POLITICS	-	false	political party
+h1-finance-01	https://www.federalreserve.gov/	FINANCE	-	false	public central bank
+h1-finance-02	https://www.ecb.europa.eu/home/html/index.en.html	FINANCE	-	false	public central bank
+h1-finance-03	https://www.bankofengland.co.uk/	FINANCE	-	false	public central bank
+h1-finance-04	https://www.borsaistanbul.com/	FINANCE	-	false	public exchange
+h1-finance-05	https://finance.yahoo.com/	FINANCE	-	false	market data
+h1-finance-06	https://www.investing.com/	FINANCE	-	false	market data
+h1-finance-07	https://www.nasdaq.com/market-activity	FINANCE	-	false	market data
+h1-finance-08	https://en.wikipedia.org/wiki/Bitcoin	FINANCE	-	false	crypto asset
+h1-finance-09	https://en.wikipedia.org/wiki/Ethereum	FINANCE	-	false	crypto asset
+h1-finance-10	https://en.wikipedia.org/wiki/Gold_as_an_investment	FINANCE	-	false	investment
+h1-finance-11	https://en.wikipedia.org/wiki/S%26P_500	FINANCE	-	false	stock index
+h1-finance-12	https://en.wikipedia.org/wiki/Interest_rate	FINANCE	-	false	finance concept
+h1-finance-13	https://en.wikipedia.org/wiki/Inflation	FINANCE	-	false	economics concept
+h1-finance-14	https://en.wikipedia.org/wiki/International_Bank_Account_Number	FINANCE	-	false	public IBAN reference negative sensitivity
+h1-place-01	https://tr.wikipedia.org/wiki/Galata_Kulesi	PLACE	-	false	landmark
+h1-place-02	https://tr.wikipedia.org/wiki/S%C3%BCmela_Manast%C4%B1r%C4%B1	PLACE	-	false	landmark
+h1-place-03	https://tr.wikipedia.org/wiki/Ani	PLACE	-	false	historic place
+h1-place-04	https://tr.wikipedia.org/wiki/Nemrut_Da%C4%9F%C4%B1	PLACE	-	false	landmark
+h1-place-05	https://tr.wikipedia.org/wiki/Safranbolu	PLACE	-	false	destination
+h1-place-06	https://en.wikivoyage.org/wiki/Bursa	PLACE	-	false	travel guide
+h1-place-07	https://en.wikivoyage.org/wiki/Prague	PLACE	-	false	travel guide
+h1-place-08	https://en.wikivoyage.org/wiki/Kyoto	PLACE	-	false	travel guide
+h1-place-09	https://en.wikipedia.org/wiki/Colosseum	PLACE	-	false	landmark
+h1-place-10	https://en.wikipedia.org/wiki/Louvre	PLACE	-	false	landmark
+h1-place-11	https://en.wikipedia.org/wiki/Grand_Canyon	PLACE	-	false	natural place
+h1-place-12	https://www.lonelyplanet.com/turkey/istanbul	PLACE	-	false	travel site
+h1-place-13	https://en.wikipedia.org/wiki/G%C3%B6reme_Open_Air_Museum	PLACE	-	false	landmark
+h1-place-14	https://en.wikivoyage.org/wiki/Cappadocia	PLACE	-	false	travel guide
+h1-product-01	https://www.nintendo.com/us/gaming-systems/switch-2/	PRODUCT	-	false	console product
+h1-product-02	https://www.playstation.com/en-us/ps5/	PRODUCT	-	false	console product
+h1-product-03	https://store.steampowered.com/steamdeck	PRODUCT	-	false	hardware product
+h1-product-04	https://www.apple.com/ipad-air/	PRODUCT	-	false	tablet product
+h1-product-05	https://www.dyson.com/vacuum-cleaners/cordless/v15/detect	PRODUCT	-	false	appliance product
+h1-product-06	https://www.ikea.com/us/en/p/kallax-shelf-unit-white-80275887/	PRODUCT	-	false	furniture product
+h1-product-07	https://www.nike.com/t/air-force-1-07-mens-shoes-jBrhbr/CW2288-111	PRODUCT	-	false	shoe product
+h1-product-08	https://electronics.sony.com/audio/headphones/headband/p/wh1000xm5-b	PRODUCT	-	false	headphone product
+h1-product-09	https://www.samsung.com/us/televisions-home-theater/tvs/qled-4k-tvs/	PRODUCT	-	false	tv product family
+h1-product-10	https://www.apple.com/apple-watch-series-10/	PRODUCT	-	false	wearable product
+h1-product-11	https://gopro.com/en/us/shop/cameras/learn/hero13black/CHDHX-131-master.html	PRODUCT	-	false	camera product
+h1-product-12	https://en.wikipedia.org/wiki/Lego_Mindstorms	PRODUCT	-	false	toy product
+h1-product-13	https://en.wikipedia.org/wiki/Adidas_Samba	PRODUCT	-	false	shoe product
+h1-product-14	https://en.wikipedia.org/wiki/Amazon_Echo	PRODUCT	-	false	product reference
+h1-sport-01	https://www.nba.com/	SPORT	-	false	basketball
+h1-sport-02	https://www.uefa.com/uefaeuropaleague/	SPORT	-	false	football tournament
+h1-sport-03	https://www.premierleague.com/	SPORT	-	false	football league
+h1-sport-04	https://www.wimbledon.com/	SPORT	-	false	tennis tournament
+h1-sport-05	https://www.formula1.com/	SPORT	-	false	motorsport
+h1-sport-06	https://www.motogp.com/	SPORT	-	false	motorsport
+h1-sport-07	https://www.letour.fr/en/	SPORT	-	false	cycling
+h1-sport-08	https://olympics.com/en/	SPORT	-	false	multi sport
+h1-sport-09	https://tr.wikipedia.org/wiki/Be%C5%9Fikta%C5%9F_JK	SPORT	-	false	tr football club
+h1-sport-10	https://tr.wikipedia.org/wiki/Trabzonspor_(futbol_tak%C4%B1m%C4%B1)	SPORT	-	false	tr football club
+h1-sport-11	https://en.wikipedia.org/wiki/Arda_G%C3%BCler	SPORT	-	false	athlete
+h1-sport-12	https://en.wikipedia.org/wiki/Max_Verstappen	SPORT	-	false	athlete
+h1-sport-13	https://www.espn.com/soccer/	SPORT	-	false	sports media
+h1-sport-14	https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026	SPORT	-	false	football tournament
+h1-game-01	https://en.wikipedia.org/wiki/Grand_Theft_Auto_V	GAME	-	false	video game
+h1-game-02	https://en.wikipedia.org/wiki/Minecraft	GAME	-	false	video game
+h1-game-03	https://en.wikipedia.org/wiki/Hades_(video_game)	GAME	-	false	video game
+h1-game-04	https://en.wikipedia.org/wiki/Hollow_Knight	GAME	-	false	video game
+h1-game-05	https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom	GAME	-	false	video game
+h1-game-06	https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt	GAME	-	false	video game
+h1-game-07	https://en.wikipedia.org/wiki/Cyberpunk_2077	GAME	-	false	video game
+h1-game-08	https://en.wikipedia.org/wiki/Fortnite	GAME	-	false	video game
+h1-game-09	https://en.wikipedia.org/wiki/Roblox	GAME	-	false	video game platform
+h1-game-10	https://store.steampowered.com/app/2379780/Balatro/	GAME	-	false	game store
+h1-game-11	https://www.rocketleague.com/en	GAME	-	false	game official
+h1-game-12	https://www.nintendo.com/us/store/products/mario-kart-8-deluxe-switch/	GAME	-	false	game store
+h1-game-13	https://www.ign.com/games/hades-ii	GAME	-	false	game media
+h1-game-14	https://store.epicgames.com/en-US/p/fall-guys	GAME	-	false	game store
+h1-ai-01	https://gemini.google.com/	AI	-	false	ai product
+h1-ai-02	https://www.anthropic.com/claude	AI	-	false	ai product
+h1-ai-03	https://openai.com/chatgpt/overview/	AI	-	false	ai product
+h1-ai-04	https://ai.meta.com/llama/	AI	-	false	ai model
+h1-ai-05	https://mistral.ai/	AI	-	false	ai company
+h1-ai-06	https://en.wikipedia.org/wiki/Stable_Diffusion	AI	-	false	ai model
+h1-ai-07	https://www.tensorflow.org/	AI	-	false	ml framework
+h1-ai-08	https://keras.io/	AI	-	false	ml framework
+h1-ai-09	https://scikit-learn.org/stable/	AI	-	false	ml framework
+h1-ai-10	https://ai.google/	AI	-	false	ai research
+h1-ai-11	https://www.microsoft.com/en-us/ai	AI	-	false	ai product family
+h1-ai-12	https://aiindex.stanford.edu/report/	AI	-	false	ai report
+h1-ai-13	https://paperswithcode.com/	AI	-	false	ml research index
+h1-ai-14	https://huggingface.co/spaces	AI	-	false	ai demos
+h1-book-01	https://en.wikipedia.org/wiki/Crime_and_Punishment	BOOK	-	false	novel
+h1-book-02	https://en.wikipedia.org/wiki/Dune_(novel)	BOOK	-	false	novel movie hard negative
+h1-book-03	https://en.wikipedia.org/wiki/The_Little_Prince	BOOK	-	false	book
+h1-book-04	https://en.wikipedia.org/wiki/Atomic_Habits	BOOK	-	false	book
+h1-book-05	https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone	BOOK	-	false	novel movie hard negative
+h1-book-06	https://en.wikipedia.org/wiki/The_Lord_of_the_Rings	BOOK	-	false	novel movie hard negative
+h1-book-07	https://tr.wikipedia.org/wiki/Saatleri_Ayarlama_Enstit%C3%BCs%C3%BC	BOOK	-	false	tr novel
+h1-book-08	https://tr.wikipedia.org/wiki/Tutunamayanlar	BOOK	-	false	tr novel
+h1-book-09	https://tr.wikipedia.org/wiki/%C4%B0nce_Memed	BOOK	-	false	tr novel
+h1-book-10	https://www.goodreads.com/book/show/41057294-normal-people	BOOK	-	false	book community
+h1-book-11	https://openlibrary.org/works/OL85892W/Dracula	BOOK	-	false	book catalog
+h1-book-12	https://www.gutenberg.org/ebooks/2701	BOOK	-	false	ebook
+h1-book-13	https://www.barnesandnoble.com/w/the-midnight-library-matt-haig/1136586832	BOOK	-	false	book store
+h1-book-14	https://standardebooks.org/ebooks/jane-austen/pride-and-prejudice	BOOK	-	false	ebook
+h1-music-01	https://en.wikipedia.org/wiki/Beyonc%C3%A9	MUSIC	-	false	artist
+h1-music-02	https://en.wikipedia.org/wiki/Taylor_Swift	MUSIC	-	false	artist
+h1-music-03	https://tr.wikipedia.org/wiki/Mor_ve_%C3%96tesi	MUSIC	-	false	tr band
+h1-music-04	https://tr.wikipedia.org/wiki/Mabel_Matiz	MUSIC	-	false	tr artist
+h1-music-05	https://en.wikipedia.org/wiki/Daft_Punk	MUSIC	-	false	band
+h1-music-06	https://en.wikipedia.org/wiki/Kendrick_Lamar	MUSIC	-	false	artist
+h1-music-07	https://en.wikipedia.org/wiki/Abbey_Road	MUSIC	-	false	album
+h1-music-08	https://en.wikipedia.org/wiki/Thriller_(album)	MUSIC	-	false	album
+h1-music-09	https://open.spotify.com/album/6JWc4iAiJ9FjyK0B59ABb4	MUSIC	-	false	streaming album
+h1-music-10	https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb	MUSIC	-	false	streaming artist
+h1-music-11	https://musicbrainz.org/artist/a74b1b7f-71a5-4011-9441-d0b5e4122711	MUSIC	-	false	music database
+h1-music-12	https://www.discogs.com/master/10362-Pink-Floyd-The-Dark-Side-Of-The-Moon	MUSIC	-	false	music marketplace
+h1-music-13	https://www.billboard.com/charts/hot-100/	MUSIC	-	false	music chart
+h1-music-14	https://www.last.fm/music/Arctic+Monkeys	MUSIC	-	false	music community
+h1-video-01	https://www.youtube.com/feed/trending	VIDEO	-	false	generic video feed
+h1-video-02	https://www.youtube.com/@veritasium	VIDEO	-	false	general video channel
+h1-video-03	https://vimeo.com/categories/documentary	VIDEO	-	false	video category
+h1-video-04	https://www.vidyard.com/	VIDEO	-	false	video platform
+h1-video-05	https://www.twitch.tv/directory/category/just-chatting	VIDEO	-	false	live video
+h1-video-06	https://www.ted.com/playlists	VIDEO	-	false	talk playlists
+h1-video-07	https://www.khanacademy.org/	VIDEO	-	false	educational video
+h1-video-08	https://nebula.tv/	VIDEO	-	false	video platform
+h1-video-09	https://dropout.tv/	VIDEO	-	false	video platform
+h1-video-10	https://www.loom.com/	VIDEO	-	false	video tool
+h1-video-11	https://wistia.com/learn	VIDEO	-	false	video learning
+h1-video-12	https://odysee.com/	VIDEO	-	false	video platform
+h1-video-13	https://www.youtube.com/@Kurzgesagt	VIDEO	-	false	general video channel
+h1-video-14	https://www.twitch.tv/directory	VIDEO	-	false	live video directory
+h1-social-01	https://old.reddit.com/r/CasualConversation/	SOCIAL	-	false	forum
+h1-social-02	https://old.reddit.com/r/AskMen/	SOCIAL	-	false	forum
+h1-social-03	https://news.ycombinator.com/ask	SOCIAL	-	false	discussion aggregator
+h1-social-04	https://www.producthunt.com/	SOCIAL	-	false	community feed
+h1-social-05	https://stackoverflow.com/questions	SOCIAL	-	false	q and a
+h1-social-06	https://discuss.python.org/	SOCIAL	-	false	community forum
+h1-social-07	https://forum.arduino.cc/	SOCIAL	-	false	community forum
+h1-social-08	https://mastodon.social/explore	SOCIAL	-	false	microblog feed
+h1-social-09	https://bsky.app/	SOCIAL	-	false	microblog platform
+h1-social-10	https://www.threads.com/	SOCIAL	-	false	microblog platform
+h1-social-11	https://www.tumblr.com/explore/trending	SOCIAL	-	false	social discovery
+h1-social-12	https://eksisozluk.com/basliklar/gundem	SOCIAL	-	false	tr discussion feed
+h1-social-13	https://forum.donanimhaber.com/	SOCIAL	-	false	tr forum
+h1-social-14	https://slashdot.org/	SOCIAL	-	false	discussion aggregator
+h1-other-01	https://www.accuweather.com/en/tr/istanbul/318251/weather-forecast/318251	OTHER	-	false	weather utility
+h1-other-02	https://www.timeanddate.com/worldclock/turkey/istanbul	OTHER	-	false	time utility
+h1-other-03	https://www.calculator.net/	OTHER	-	false	calculator utility
+h1-other-04	https://en.wikipedia.org/wiki/Periodic_table	SCIENCE	-	false	reference
+h1-other-05	https://home.unicode.org/	OTHER	-	false	technical reference
+h1-other-06	https://dictionary.cambridge.org/dictionary/english/memento	OTHER	-	false	dictionary
+h1-other-07	https://sozluk.gov.tr/	OTHER	-	false	tr dictionary
+h1-other-08	https://en.wikipedia.org/wiki/QR_code	OTHER	-	false	technical reference
+h1-other-09	https://en.wikipedia.org/wiki/PDF	OTHER	-	false	file format
+h1-other-10	https://htmlcolorcodes.com/	OTHER	-	false	color utility
+h1-other-11	https://www.lipsum.com/	OTHER	-	false	text utility
+h1-other-12	https://www.unitconverters.net/	OTHER	-	false	unit utility
+h1-other-13	https://apod.nasa.gov/apod/astropix.html	SCIENCE	-	false	astronomy page
+h1-other-14	https://www.etymonline.com/	OTHER	-	false	language reference

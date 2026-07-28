@@ -1,0 +1,85 @@
+# Project Memento - zayif sinif takviyesi (VIDEO/SOCIAL/PRODUCT/SERIES)
+# Bu siniflar RSS akisiyla iyi kapsanamiyor (platform/format kategorileri); modelde
+# en dusuk dogruluga sahiplar (VIDEO %79, SOCIAL %79, SERIES %82). Cesitli gercek
+# platform sayfalari. PC-OCR ile islenecek, cihaz kullanilmayacak.
+id	url	topic	intent	sensitive	note
+wk-video-01	https://www.youtube.com/watch?v=jNQXAC9IVRw	VIDEO	-	false	yt
+wk-video-02	https://www.youtube.com/watch?v=9bZkp7q19f0	VIDEO	-	false	yt
+wk-video-03	https://www.youtube.com/watch?v=kJQP7kiw5Fk	VIDEO	-	false	yt
+wk-video-04	https://www.youtube.com/watch?v=OPf0YbXqDm0	VIDEO	-	false	yt
+wk-video-05	https://www.youtube.com/watch?v=fJ9rUzIMcZQ	VIDEO	-	false	yt
+wk-video-06	https://www.youtube.com/watch?v=hT_nvWreIhg	VIDEO	-	false	yt
+wk-video-07	https://www.youtube.com/results?search_query=yemek+tarifi	VIDEO	-	false	yt arama
+wk-video-08	https://www.youtube.com/results?search_query=maç+özeti	VIDEO	-	false	yt arama
+wk-video-09	https://www.youtube.com/feed/trending	VIDEO	-	false	yt trend
+wk-video-10	https://www.youtube.com/gaming	VIDEO	-	false	yt gaming
+wk-video-11	https://www.youtube.com/shorts	VIDEO	-	false	shorts
+wk-video-12	https://www.twitch.tv/directory/game/Just%20Chatting	VIDEO	-	false	twitch
+wk-video-13	https://www.twitch.tv/directory	VIDEO	-	false	twitch
+wk-video-14	https://vimeo.com/staffpicks	VIDEO	-	false	vimeo
+wk-video-15	https://vimeo.com/categories	VIDEO	-	false	vimeo
+wk-video-16	https://www.dailymotion.com/tr	VIDEO	-	false	dailymotion
+wk-video-17	https://rumble.com/	VIDEO	-	false	rumble
+wk-video-18	https://www.youtube.com/watch?v=dQw4w9WgXcQ	VIDEO	-	false	yt
+wk-video-19	https://www.youtube.com/watch?v=L_jWHffIx5E	VIDEO	-	false	yt
+wk-video-20	https://www.youtube.com/watch?v=RgKAFK5djSk	VIDEO	-	false	yt
+wk-social-01	https://www.reddit.com/r/AskReddit/	SOCIAL	-	false	reddit
+wk-social-02	https://www.reddit.com/r/todayilearned/	SOCIAL	-	false	reddit
+wk-social-03	https://www.reddit.com/r/explainlikeimfive/	SOCIAL	-	false	reddit
+wk-social-04	https://www.reddit.com/r/turkey/	SOCIAL	-	false	reddit
+wk-social-05	https://www.reddit.com/r/AskMen/	SOCIAL	-	false	reddit
+wk-social-06	https://www.reddit.com/r/relationships/	SOCIAL	-	false	reddit
+wk-social-07	https://old.reddit.com/r/worldnews/	SOCIAL	-	false	reddit
+wk-social-08	https://news.ycombinator.com/	SOCIAL	-	false	hn
+wk-social-09	https://news.ycombinator.com/ask	SOCIAL	-	false	hn
+wk-social-10	https://lobste.rs/	SOCIAL	-	false	forum
+wk-social-11	https://eksisozluk.com/basliklar/gundem	SOCIAL	-	false	eksi
+wk-social-12	https://eksisozluk.com/basliklar/populer	SOCIAL	-	false	eksi
+wk-social-13	https://forum.donanimhaber.com/	SOCIAL	-	false	dh forum
+wk-social-14	https://www.wikitree.com/g2g/	SOCIAL	-	false	forum
+wk-social-15	https://mastodon.social/explore	SOCIAL	-	false	mastodon
+wk-social-16	https://mastodon.social/public/local	SOCIAL	-	false	mastodon
+wk-social-17	https://bsky.app/	SOCIAL	-	false	bluesky
+wk-social-18	https://www.quora.com/	SOCIAL	-	false	quora
+wk-social-19	https://stackoverflow.com/questions	SOCIAL	-	false	so
+wk-social-20	https://www.reddit.com/r/movies/	SOCIAL	-	false	reddit
+wk-product-01	https://www.trendyol.com/erkek-spor-ayakkabi-x-g2-c114	PRODUCT	-	false	trendyol
+wk-product-02	https://www.trendyol.com/kadin-elbise-x-g1-c56	PRODUCT	-	false	trendyol
+wk-product-03	https://www.hepsiburada.com/dizustu-bilgisayarlar-c-98	PRODUCT	-	false	hepsiburada
+wk-product-04	https://www.hepsiburada.com/kulaklik-c-60003024	PRODUCT	-	false	hepsiburada
+wk-product-05	https://www.amazon.com.tr/s?k=bluetooth+hoparlor	PRODUCT	-	false	amazon
+wk-product-06	https://www.amazon.com/s?k=mechanical+keyboard	PRODUCT	-	false	amazon
+wk-product-07	https://www.n11.com/telefon-ve-aksesuarlari	PRODUCT	-	false	n11
+wk-product-08	https://www.mediamarkt.com.tr/tr/category/televizyon-681.html	PRODUCT	-	false	mediamarkt
+wk-product-09	https://www.decathlon.com.tr/C-8-kosu	PRODUCT	-	false	decathlon
+wk-product-10	https://www.ikea.com.tr/urunler/oturma-odasi	PRODUCT	-	false	ikea
+wk-product-11	https://www.apple.com/tr/shop/buy-mac/macbook-pro	PRODUCT	-	false	apple
+wk-product-12	https://www.samsung.com/tr/smartphones/galaxy-s24/	PRODUCT	-	false	samsung
+wk-product-13	https://www.bestbuy.com/site/headphones/all-headphones/pcmcat144700050004.c	PRODUCT	-	false	bestbuy
+wk-product-14	https://www.zara.com/tr/tr/erkek-gomlekler-l737.html	PRODUCT	-	false	zara
+wk-product-15	https://www.lcw.com/kadin-giyim	PRODUCT	-	false	lcwaikiki
+wk-product-16	https://www.gittigidiyor.com/	PRODUCT	-	false	gg
+wk-product-17	https://www.nike.com/tr/w/erkek-ayakkabi	PRODUCT	-	false	nike
+wk-product-18	https://www.adidas.com.tr/erkek-ayakkabi	PRODUCT	-	false	adidas
+wk-product-19	https://www.teknosa.com/bilgisayar-tablet-c-100001	PRODUCT	-	false	teknosa
+wk-product-20	https://www.vatanbilgisayar.com/notebook/	PRODUCT	-	false	vatan
+wk-series-01	https://en.wikipedia.org/wiki/The_Sopranos	SERIES	-	false	wiki
+wk-series-02	https://en.wikipedia.org/wiki/Better_Call_Saul	SERIES	-	false	wiki
+wk-series-03	https://en.wikipedia.org/wiki/The_Last_of_Us_(TV_series)	SERIES	-	false	wiki
+wk-series-04	https://en.wikipedia.org/wiki/Succession_(TV_series)	SERIES	-	false	wiki
+wk-series-05	https://en.wikipedia.org/wiki/Fleabag	SERIES	-	false	wiki
+wk-series-06	https://www.imdb.com/title/tt5491994/	SERIES	-	false	imdb planet earth
+wk-series-07	https://www.imdb.com/title/tt2861424/	SERIES	-	false	imdb rick morty
+wk-series-08	https://www.tvmaze.com/shows/1371/the-last-of-us	SERIES	-	false	tvmaze
+wk-series-09	https://www.tvmaze.com/shows/618/succession	SERIES	-	false	tvmaze
+wk-series-10	https://en.wikipedia.org/wiki/Severance_(TV_series)	SERIES	-	false	wiki
+wk-series-11	https://en.wikipedia.org/wiki/Dark_(TV_series)	SERIES	-	false	wiki
+wk-series-12	https://en.wikipedia.org/wiki/Peaky_Blinders	SERIES	-	false	wiki
+wk-series-13	https://tr.wikipedia.org/wiki/Muhte%C5%9Fem_Y%C3%BCzy%C4%B1l	SERIES	-	false	wiki tr dizi
+wk-series-14	https://tr.wikipedia.org/wiki/Dirili%C5%9F:_Ertu%C4%9Frul	SERIES	-	false	wiki tr dizi
+wk-series-15	https://www.rottentomatoes.com/tv/the_bear	SERIES	-	false	rt
+wk-series-16	https://www.rottentomatoes.com/tv/house_of_the_dragon	SERIES	-	false	rt
+wk-series-17	https://en.wikipedia.org/wiki/Ted_Lasso	SERIES	-	false	wiki
+wk-series-18	https://en.wikipedia.org/wiki/The_Crown_(TV_series)	SERIES	-	false	wiki
+wk-series-19	https://en.wikipedia.org/wiki/Arcane_(TV_series)	SERIES	-	false	wiki
+wk-series-20	https://en.wikipedia.org/wiki/Shogun_(2024_miniseries)	SERIES	-	false	wiki

@@ -1,0 +1,299 @@
+# Project Memento — sınıflandırıcı seed değerlendirme seti
+# Bu set mevcut birim test fikstürlerinden türetildi; sentetik ve Git'e girebilir.
+# Gerçek cihaz örnekleri .private-data/eval/ altında tutulur, Git'e GİRMEZ.
+
+=== case seed-recipe-pasta
+display: Screenshot_1.png
+topic: RECIPE
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Limonlu pasta tarifi
+2 yumurta
+180 derece fırında 35 dakika
+=== end
+
+=== case seed-place-kahvalti
+display: Screenshot_2.png
+topic: PLACE
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Moda Kahvaltı
+Caferağa Mahallesi Rıhtım Cadde 12
+Rezervasyon
+=== end
+
+=== case seed-product-ayakkabi
+display: Screenshot_3.png
+topic: PRODUCT
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Mavi koşu ayakkabısı
+1.499 TL
+Sepette yüzde 20 indirim
+=== end
+
+=== case seed-otp-sms
+display: Screenshot_4.png
+topic: OTHER
+sensitive: true
+--- ocr
+OTP doğrulama kodu 481921
+Bu şifreyi kimseyle paylaşmayın
+=== end
+
+=== case seed-movie-breadcrumb
+display: Screenshot_movie.jpg
+topic: MOVIE
+sensitive: false
+--- ocr
+10:58
+2% m.sinemalar.com/mobileweb
+Anasayfa > Tüm Filmler > Iron Maiden: Burning Ambition
+Belgesel
+=== end
+
+=== case seed-news-sozcu
+display: Screenshot_news.jpg
+topic: NEWS
+sensitive: false
+--- ocr
+10:57
+2% sozcu.com.tr/suriye-den-yal
+SÖZCÜ
+STERLİNA
+Haberler - Gündem
+Google News
+14 Temmuz 2026 - 21:05 Güncellenme: 15 Temmuz 2026 - 08:33
+Suriye'den Yalova'ya plastik şişeyle getirmişler
+=== end
+
+=== case seed-recipe-beyti
+display: Screenshot_recipe.jpg
+topic: RECIPE
+sensitive: false
+--- ocr
+10:59
+= Semek
+Com
+Hızlı Ocak Tarifleri >
+Beyti kebabının hamuru için:
+=== end
+
+=== case seed-sport-worldcup
+display: Screenshot_matches.jpg
+topic: SPORT
+intent: UNCLEAR
+sensitive: false
+--- ocr
+11:54 B
+Q dünya kupası maçları
+Genel Bakış Maçlar
+2026 FIFA Dünya Kupası Bugün, 22:00
+Maç öncesi analiz
+Puan Durumu
+=== end
+
+=== case seed-series-kizilcik
+display: Screenshot_series.jpg
+topic: SERIES
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Yeni bölüm: Kızılcık Şerbeti
+Dizi
+3. Sezon 12. Bölüm
+=== end
+
+=== case seed-video-short
+display: Screenshot_short.jpg
+topic: OTHER
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Otomatik seslendirme
+@ornekhesap
+Abone ol
+Shorts
+Paylaş
+=== end
+
+=== case seed-game-ad
+display: Screenshot_game_ad.jpg
+topic: GAME
+intent: UNCLEAR
+sensitive: false
+--- ocr
+elimination
+Block Blast
+YouTube
+Shorts
+Paylaş
+=== end
+
+=== case seed-video-remix
+display: Screenshot_short_remix.jpg
+topic: OTHER
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Do You Love This?
+Abone ol
+Shorts
+Paylaş
+Remix
+=== end
+
+=== case seed-music-song
+display: Screenshot_music.jpg
+topic: MUSIC
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Sanatçı - Şarkı Adı
+@MuzikOfficial 22 Mn görüntüleme
+Abone ol
+Mix
+Bu şarkı çok güzel
+=== end
+
+=== case seed-movie-teaser
+display: Screenshot_teaser.jpg
+topic: MOVIE
+intent: UNCLEAR
+sensitive: false
+--- ocr
+yuI1yOl IVIUILIVIS NNIIIIII yal dtUIgI hdUb
+Dune: Part Three | Official Teaser
+Yeni film 2026 yılında vizyona girecek
+YouTube
+=== end
+
+=== case seed-ai-guide
+display: Screenshot_ai_guide.jpg
+topic: AI
+intent: UNCLEAR
+sensitive: false
+--- ocr
+developers.openai.com
+OpenAI Developers
+Prompting guidance for
+GPT-5.6 Sol
+Use this guide when adapting prompts and tool descriptions.
+stacks to GPT-5.6 Sol or the GPT-5.6 family with modelguide details.
+=== end
+
+=== case seed-book-ebook
+display: Screenshot_ebook.jpg
+topic: BOOK
+intent: UNCLEAR
+sensitive: true
+--- ocr
+Oyunlar
+Erotik Çekimi
+Artırmanın 50
+Yolu: +18
+Fotoğraflar
+İçermektedir!
+Ece Gürsoy
+Kendine Aşık Yayımcılık
+E-kitap
+Satın al (₺49,90)
+=== end
+
+=== case seed-social-reddit
+display: Screenshot_reddit.jpg
+topic: OTHER
+intent: UNCLEAR
+sensitive: true
+--- ocr
+reddit.com
+r/vlandiya
+Sizce erkekler neden bu kadar fazla cinselliği arzuluyor?
+Size bu kadar evrensel bilgi verdim.
+=== end
+
+=== case seed-social-quote
+display: Screenshot_quote.jpg
+topic: OTHER
+intent: UNCLEAR
+sensitive: false
+--- ocr
+koyarsa.
+Instagram
+21 saat önce
+Ana sayfa
+Bilge bir Kurt der ki
+KÖR EBE OYNAMAK
+Görseller telif hakkına tabi olabilir. Daha Fazla Bilgi
+Paylaş
+=== end
+
+=== case seed-social-forum
+display: Screenshot_forum.jpg
+topic: OTHER
+intent: UNCLEAR
+sensitive: false
+--- ocr
+donanimhaber.com
+Konu Sahibi
+Cevap Yaz
+Kurt kuzuyu yemeye karar verince...
+=== end
+
+=== case seed-politics-person
+display: Screenshot_person.jpg
+topic: POLITICS
+intent: UNCLEAR
+sensitive: false
+--- ocr
+Angela Merkel
+Devlet görevlisi ve eski Almanya Şansölyesi
+Genel Bakış
+Yaş 71 yıl
+Kitaplar
+TV şovları
+=== end
+
+=== case seed-visual-food-photo
+display: Screenshot_food.jpg
+topic: OTHER
+intent: UNCLEAR
+sensitive: false
+--- ocr
+--- labels
+Food|0.92
+Dessert|0.81
+=== end
+
+=== case seed-visual-game-scene
+display: Screenshot_game.jpg
+topic: OTHER
+intent: UNCLEAR
+sensitive: false
+--- ocr
+skor 12450
+--- labels
+Games|0.83
+=== end
+
+=== case seed-visual-text-wins
+display: Screenshot_news_food.jpg
+topic: NEWS
+sensitive: false
+--- ocr
+Son dakika haber ajansı bildirdi
+--- labels
+Food|0.95
+=== end
+
+=== case seed-visual-low-confidence
+display: Screenshot_blur.jpg
+topic: OTHER
+sensitive: false
+--- ocr
+--- labels
+Food|0.58
+=== end

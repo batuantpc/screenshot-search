@@ -1,0 +1,131 @@
+# Project Memento - web korpusu manifesti (tools/capture-web-corpus.py girdisi)
+# Sutunlar: id / url / topic / intent / sensitive / note   -- ayirici: TAB
+# topic ve intent degerleri android/.../data/ScreenshotItem.kt icindeki enum'larla birebir ayni.
+# topic  : RECIPE MOVIE SERIES NEWS POLITICS FINANCE PLACE PRODUCT SPORT GAME AI BOOK MUSIC VIDEO SOCIAL OTHER
+# intent : GO TRY BUY READ_WATCH REMEMBER UNCLEAR
+# sensitive: bu korpusta hepsi false. "sensitive-negatif" notlu satirlar finansal GORUNEN
+#            ama gercekte herkese acik sayfalar; sensitive dedektorunun yanlis alarm testi.
+# Butun URL'ler 2026-07-21'de HTTP 200 doner (tools ile toplu dogrulandi).
+id	url	topic	intent	sensitive	note
+recipe-tr-mercimek	https://tr.wikipedia.org/wiki/Mercimek_%C3%A7orbas%C4%B1	RECIPE	TRY	false	tr / ansiklopedik tarif
+recipe-tr-karniyarik	https://tr.wikipedia.org/wiki/Karn%C4%B1yar%C4%B1k	RECIPE	TRY	false	tr / turkce karakter yogun
+recipe-tr-menemen	https://tr.wikipedia.org/wiki/Menemen_(yemek)	RECIPE	TRY	false	tr
+recipe-tr-baklava	https://tr.wikipedia.org/wiki/Baklava	RECIPE	TRY	false	tr / tatli
+recipe-tr-iskender	https://tr.wikipedia.org/wiki/%C4%B0skender_kebap	RECIPE	TRY	false	tr / buyuk I harfi testi
+recipe-tr-yemekcom	https://yemek.com/tarif/mercimek-corbasi/	RECIPE	TRY	false	tr / gercek tarif sitesi
+recipe-tr-nefis	https://www.nefisyemektarifleri.com/mercimek-corbasi-tarifi/	RECIPE	TRY	false	tr / gercek tarif sitesi
+recipe-en-carbonara	https://en.wikipedia.org/wiki/Carbonara	RECIPE	TRY	false	en
+recipe-en-lasagne	https://www.bbcgoodfood.com/recipes/classic-lasagne	RECIPE	TRY	false	en / malzeme listeli tarif
+movie-en-shawshank	https://www.imdb.com/title/tt0111161/	MOVIE	READ_WATCH	false	en / imdb bot korumasi olabilir
+movie-en-oppenheimer	https://www.imdb.com/title/tt15398776/	MOVIE	READ_WATCH	false	en / imdb
+movie-en-dune2	https://letterboxd.com/film/dune-part-two/	MOVIE	READ_WATCH	false	en / letterboxd
+movie-en-parasite	https://letterboxd.com/film/parasite-2019/	OTHER	UNCLEAR	false	en / yakalama Cloudflare guvenlik ekraninda kaldi
+movie-en-interstellar	https://en.wikipedia.org/wiki/Interstellar_(film)	MOVIE	READ_WATCH	false	en
+movie-en-rt-dune2	https://www.rottentomatoes.com/m/dune_part_two	MOVIE	READ_WATCH	false	en / puan odakli
+movie-tr-eskiya	https://tr.wikipedia.org/wiki/E%C5%9Fk%C4%B1ya_(film)	MOVIE	READ_WATCH	false	tr
+movie-tr-babamveoglum	https://tr.wikipedia.org/wiki/Babam_ve_O%C4%9Flum	MOVIE	READ_WATCH	false	tr
+movie-tr-beyazperde	https://www.beyazperde.com/	MOVIE	READ_WATCH	false	tr / vizyon listesi
+movie-tr-sinemalar	https://www.sinemalar.com/	MOVIE	READ_WATCH	false	tr / mobil siteye yonlenir
+series-en-breakingbad	https://www.imdb.com/title/tt0903747/	SERIES	READ_WATCH	false	en / imdb
+series-en-got	https://www.imdb.com/title/tt0944947/	SERIES	READ_WATCH	false	en / imdb
+series-en-severance	https://en.wikipedia.org/wiki/Severance_(TV_series)	SERIES	READ_WATCH	false	en
+series-en-thebear	https://www.rottentomatoes.com/tv/the_bear	SERIES	READ_WATCH	false	en
+series-en-tvmaze	https://www.tvmaze.com/shows/1/under-the-dome	SERIES	READ_WATCH	false	en / bolum listesi
+series-tr-kizilcik	https://tr.wikipedia.org/wiki/K%C4%B1z%C4%B1lc%C4%B1k_%C5%9Eerbeti	SERIES	READ_WATCH	false	tr / cihaz setinde de var
+series-tr-tabii	https://www.trtizle.com/	SERIES	READ_WATCH	false	tr / tabii.com'a yonlenir
+news-tr-bbc	https://www.bbc.com/turkce	NEWS	READ_WATCH	false	tr
+news-tr-hurriyet	https://www.hurriyet.com.tr/	NEWS	READ_WATCH	false	tr
+news-tr-ntv	https://www.ntv.com.tr/	NEWS	READ_WATCH	false	tr
+news-tr-aa	https://www.aa.com.tr/tr	NEWS	READ_WATCH	false	tr
+news-tr-milliyet	https://www.milliyet.com.tr/	NEWS	READ_WATCH	false	tr
+news-tr-webrazzi	https://webrazzi.com/	NEWS	READ_WATCH	false	tr / teknoloji haber
+news-en-techcrunch	https://techcrunch.com/	NEWS	READ_WATCH	false	en / teknoloji haber
+news-en-guardian	https://www.theguardian.com/international	NEWS	READ_WATCH	false	en / cerez banner testi
+place-tr-kizkulesi	https://tr.wikipedia.org/wiki/K%C4%B1z_Kulesi	PLACE	GO	false	tr
+place-tr-kapadokya	https://tr.wikipedia.org/wiki/Kapadokya	PLACE	GO	false	tr
+place-tr-pamukkale	https://tr.wikipedia.org/wiki/Pamukkale	PLACE	GO	false	tr
+place-tr-efes	https://tr.wikipedia.org/wiki/Efes	PLACE	GO	false	tr / anlam ayrimi sayfasi olabilir
+place-tr-sultanahmet	https://tr.wikipedia.org/wiki/Sultanahmet_Meydan%C4%B1	PLACE	GO	false	tr
+place-tr-izmir	https://tr.wikivoyage.org/wiki/%C4%B0zmir	PLACE	GO	false	tr / gezi rehberi
+place-en-istanbul	https://en.wikivoyage.org/wiki/Istanbul	PLACE	GO	false	en / gezi rehberi
+place-en-antalya	https://en.wikivoyage.org/wiki/Antalya	PLACE	GO	false	en / gezi rehberi
+place-en-bluemosque	https://en.wikipedia.org/wiki/Sultan_Ahmed_Mosque	PLACE	GO	false	en
+product-tr-iphone16	https://www.apple.com/tr/iphone-16/	PRODUCT	BUY	false	tr / satis sayfasina yonlenir
+product-tr-airpods	https://www.apple.com/tr/airpods-pro/	PRODUCT	BUY	false	tr
+product-tr-macbookair	https://www.apple.com/tr/macbook-air/	PRODUCT	BUY	false	tr
+product-tr-galaxys24	https://www.samsung.com/tr/smartphones/galaxy-s24/	PRODUCT	BUY	false	tr
+product-tr-trendyol	https://www.trendyol.com/	PRODUCT	BUY	false	tr / pazaryeri anasayfa
+product-tr-hepsiburada	https://www.hepsiburada.com/	PRODUCT	BUY	false	tr / pazaryeri anasayfa
+product-tr-ikea	https://www.ikea.com.tr/	PRODUCT	BUY	false	tr / mobilya
+product-tr-philips	https://www.philips.com.tr/	PRODUCT	BUY	false	tr / beyaz esya
+product-tr-zara	https://www.zara.com/tr/	PRODUCT	BUY	false	tr / giyim
+product-en-iphone16-wiki	https://en.wikipedia.org/wiki/IPhone_16	PRODUCT	BUY	false	en / urun ansiklopedi sayfasi
+sport-tr-sporx	https://www.sporx.com/	SPORT	READ_WATCH	false	tr / mobil siteye yonlenir
+sport-tr-fotomac	https://www.fotomac.com.tr/	SPORT	READ_WATCH	false	tr
+sport-tr-trtspor	https://www.trtspor.com.tr/	SPORT	READ_WATCH	false	tr
+sport-tr-galatasaray	https://tr.wikipedia.org/wiki/Galatasaray_Spor_Kul%C3%BCb%C3%BC	SPORT	READ_WATCH	false	tr
+sport-tr-fenerbahce	https://tr.wikipedia.org/wiki/Fenerbah%C3%A7e_Spor_Kul%C3%BCb%C3%BC	SPORT	READ_WATCH	false	tr
+sport-en-espn	https://www.espn.com/	SPORT	READ_WATCH	false	en
+sport-en-skysports	https://www.skysports.com/football	SPORT	READ_WATCH	false	en
+sport-en-uefa	https://www.uefa.com/uefachampionsleague/	SPORT	READ_WATCH	false	en / fikstur
+game-en-cs2	https://store.steampowered.com/app/730/CounterStrike_2/	GAME	TRY	false	en / steam magaza
+game-en-dota2	https://store.steampowered.com/app/570/Dota_2/	GAME	TRY	false	en / steam magaza
+game-en-tf2	https://store.steampowered.com/app/440/Team_Fortress_2/	GAME	TRY	false	en / steam magaza
+game-en-stardew	https://store.steampowered.com/app/413150/Stardew_Valley/	GAME	BUY	false	en / fiyatli steam sayfasi
+game-en-bg3	https://en.wikipedia.org/wiki/Baldur%27s_Gate_3	GAME	TRY	false	en
+game-en-eldenring	https://en.wikipedia.org/wiki/Elden_Ring	GAME	TRY	false	en
+game-en-ign	https://www.ign.com/games/elden-ring	GAME	TRY	false	en / oyun medya
+game-en-itch	https://itch.io/games	GAME	TRY	false	en / indie liste
+game-tr-minecraft	https://tr.wikipedia.org/wiki/Minecraft	GAME	TRY	false	tr
+ai-en-anthropic	https://www.anthropic.com/news	AI	READ_WATCH	false	en
+ai-en-openai	https://openai.com/	AI	READ_WATCH	false	en
+ai-en-huggingface	https://huggingface.co/models	AI	TRY	false	en / model listesi
+ai-en-arxiv-attention	https://arxiv.org/abs/1706.03762	AI	READ_WATCH	false	en / akademik ozet
+ai-en-arxiv-gpt3	https://arxiv.org/abs/2005.14165	AI	READ_WATCH	false	en / akademik ozet
+ai-en-llm-wiki	https://en.wikipedia.org/wiki/Large_language_model	AI	READ_WATCH	false	en
+ai-en-pytorch	https://pytorch.org/	AI	TRY	false	en / framework
+ai-en-deeplearning	https://www.deeplearning.ai/	AI	TRY	false	en / kurs
+ai-en-ollama	https://github.com/ollama/ollama	AI	TRY	false	en / github deposu
+ai-tr-yapayzeka	https://tr.wikipedia.org/wiki/Yapay_zek%C3%A2	AI	READ_WATCH	false	tr
+book-en-hungergames	https://www.goodreads.com/book/show/2767052-the-hunger-games	BOOK	READ_WATCH	false	en / goodreads
+book-en-hobbit	https://www.goodreads.com/book/show/5907.The_Hobbit	BOOK	READ_WATCH	false	en / goodreads
+book-en-1984	https://www.goodreads.com/book/show/40961427-1984	BOOK	READ_WATCH	false	en / goodreads
+book-en-sapiens	https://en.wikipedia.org/wiki/Sapiens:_A_Brief_History_of_Humankind	BOOK	READ_WATCH	false	en
+book-en-gutenberg	https://www.gutenberg.org/ebooks/1342	BOOK	READ_WATCH	false	en / e-kitap indirme
+book-en-openlibrary	https://openlibrary.org/works/OL45804W/Fantastic_Mr_Fox	BOOK	READ_WATCH	false	en
+book-tr-kurkmantolu	https://tr.wikipedia.org/wiki/K%C3%BCrk_Mantolu_Madonna	BOOK	READ_WATCH	false	tr
+book-tr-sefiller	https://tr.wikipedia.org/wiki/Sefiller	BOOK	READ_WATCH	false	tr
+book-tr-kitapyurdu	https://www.kitapyurdu.com/	BOOK	BUY	false	tr / kitap e-ticaret
+music-tr-tarkan	https://tr.wikipedia.org/wiki/Tarkan	MUSIC	READ_WATCH	false	tr
+music-tr-barismanco	https://tr.wikipedia.org/wiki/Bar%C4%B1%C5%9F_Man%C3%A7o	MUSIC	READ_WATCH	false	tr
+music-tr-genius	https://genius.com/artists/Tarkan	MUSIC	READ_WATCH	false	tr / sanatci sayfasi (sarki sozu degil)
+music-en-sezenaksu	https://en.wikipedia.org/wiki/Sezen_Aksu	MUSIC	READ_WATCH	false	en
+music-en-ram	https://en.wikipedia.org/wiki/Random_Access_Memories	MUSIC	READ_WATCH	false	en / album
+music-en-spotify	https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv	MUSIC	READ_WATCH	false	en / spotify web player
+music-en-lastfm	https://www.last.fm/music/Radiohead	MUSIC	READ_WATCH	false	en
+music-en-bandcamp	https://bandcamp.com/	MUSIC	READ_WATCH	false	en
+music-en-soundcloud	https://soundcloud.com/	MUSIC	READ_WATCH	false	en / mobil siteye yonlenir
+video-en-youtube-watch	https://www.youtube.com/watch?v=dQw4w9WgXcQ	MUSIC	READ_WATCH	false	en / kaynak YouTube, semantik konu muzik
+video-en-youtube-ted	https://www.youtube.com/@TED	VIDEO	READ_WATCH	false	en / kanal sayfasi
+video-tr-youtube-arama	https://www.youtube.com/results?search_query=mercimek+corbasi+tarifi	RECIPE	TRY	false	tr / kaynak YouTube, semantik konu tarif
+video-en-ted	https://www.ted.com/talks	VIDEO	READ_WATCH	false	en
+video-en-peertube	https://peertube.tv/	VIDEO	READ_WATCH	false	en / federe video platformu
+video-en-twitch	https://www.twitch.tv/directory	VIDEO	READ_WATCH	false	en / canli yayin
+video-en-vimeo	https://vimeo.com/watch	VIDEO	READ_WATCH	false	en
+social-en-reddit-ask	https://old.reddit.com/r/AskReddit/	SOCIAL	READ_WATCH	false	en / forum akisi
+social-en-reddit-food	https://www.reddit.com/r/food/	RECIPE	TRY	false	en / kaynak Reddit, semantik konu tarif
+social-en-reddit-movies	https://old.reddit.com/r/movies/	MOVIE	READ_WATCH	false	en / kaynak Reddit, semantik konu film
+social-tr-reddit-istanbul	https://old.reddit.com/r/istanbul/	SOCIAL	READ_WATCH	false	tr / turkce icerik
+social-tr-eksisozluk	https://eksisozluk.com/	POLITICS	READ_WATCH	false	tr / kaynak Eksi, semantik konu secim
+social-en-hn	https://news.ycombinator.com/	SOCIAL	READ_WATCH	false	en / link agregatoru
+social-en-mastodon	https://mastodon.social/explore	SOCIAL	READ_WATCH	false	en / mikroblog akisi
+social-en-lobsters	https://lobste.rs/	SOCIAL	READ_WATCH	false	en
+other-tr-tcmb	https://www.tcmb.gov.tr/	FINANCE	REMEMBER	false	sensitive-negatif / merkez bankasi
+other-tr-doviz	https://www.doviz.com/	FINANCE	REMEMBER	false	sensitive-negatif / kur tablosu
+other-tr-bloomberght	https://www.bloomberght.com/	FINANCE	REMEMBER	false	sensitive-negatif / finans haber
+other-en-iban	https://www.iban.com/structure	FINANCE	REMEMBER	false	sensitive-negatif / IBAN yapisi
+other-en-coinmarketcap	https://coinmarketcap.com/currencies/bitcoin/	FINANCE	REMEMBER	false	sensitive-negatif / kripto fiyat
+other-tr-turklirasi	https://tr.wikipedia.org/wiki/T%C3%BCrk_liras%C4%B1	FINANCE	REMEMBER	false	sensitive-negatif / para birimi
+other-tr-mgm	https://www.mgm.gov.tr/	OTHER	REMEMBER	false	tr / hava durumu
+other-en-timezone	https://en.wikipedia.org/wiki/Time_zone	OTHER	REMEMBER	false	en / notr referans
+other-tr-wikipedia	https://tr.wikipedia.org/wiki/Anasayfa	OTHER	UNCLEAR	false	tr / karma icerikli anasayfa

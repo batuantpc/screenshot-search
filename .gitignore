@@ -1,0 +1,55 @@
+# Codex/session internals
+.agents/
+.codex/
+
+# Android/Gradle machine-local and generated files
+.gradle/
+.kotlin/
+.idea/
+.tooling/
+**/build/
+android/local.properties
+*.iml
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Secrets and signing material
+.env
+.env.*
+!.env.example
+key.properties
+keystore.properties
+android/keystore.properties
+*.jks
+*.keystore
+google-services.json
+
+# Consented research exports and all derived local datasets
+.private-data/
+private-data/
+*.private.json
+
+# Generated install packages stay outside Git history
+*.apk
+*.aab
+outputs/*.apk.sha256
+outputs/*.aab.sha256
+/Teslimler/
+
+# Resmi MediaPipe modeli test APK'si icin gerektiğinde indirilir; urun/Git'e girmez.
+android/app/src/androidTest/assets/universal_sentence_encoder.tflite
+# Offline benchmark models are generated locally. They may encode private correction data.
+android/app/src/test/resources/models/
+
+# Python arac cache'i (tools/ altindaki script'ler)
+__pycache__/
+*.pyc
+
+# Ham Instagram disa aktarimi: katilimci verisi, hicbir kosulda Git'e girmez.
+memento-data/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp

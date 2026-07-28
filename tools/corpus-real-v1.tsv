@@ -1,0 +1,142 @@
+# Project Memento - GERCEK DUNYA korpusu v1
+# Amac: Wikipedia agirligini kirmak. Insanlarin gercekte screenshot aldigi yuzeyler:
+# yemek siteleri, e-ticaret, video, haber, spor, harita, forum, muzik, oyun magazalari.
+# TR + EN karisik. Wikipedia BILEREK yok (zaten fazlasiyla temsil ediliyor).
+#
+# SINIR: Instagram / WhatsApp / TikTok / uygulama ici ekranlar login duvarinin arkasinda,
+# headless tarayiciyla otomatik cekilemez. Gercek dagilima ulasmanin tek yolu kullanicinin
+# kendi screenshot'lari ve uygulama ici duzeltmeleridir.
+id	url	topic	intent	sensitive	note
+r-recipe-01	https://www.nefisyemektarifleri.com/mercimek-corbasi-tarifi/	RECIPE	-	false	tr yemek
+r-recipe-02	https://yemek.com/tarif/kisir/	RECIPE	-	false	tr yemek
+r-recipe-03	https://www.allrecipes.com/recipes/17562/dinner/	RECIPE	-	false	en yemek listeleme
+r-recipe-04	https://www.seriouseats.com/recipes	RECIPE	-	false	en yemek listeleme
+r-recipe-05	https://www.foodnetwork.com/recipes	RECIPE	-	false	en yemek listeleme
+r-recipe-06	https://www.bbcgoodfood.com/recipes/collection/easy-dinner-recipes	RECIPE	-	false	en yemek koleksiyon
+r-recipe-07	https://www.nefisyemektarifleri.com/kategori/tatli-tarifleri/	RECIPE	-	false	tr tatli
+r-recipe-08	https://yemek.com/tarifler/	RECIPE	-	false	tr listeleme
+r-recipe-09	https://www.simplyrecipes.com/dinner-recipes-5091433	RECIPE	-	false	en listeleme
+r-recipe-10	https://www.epicurious.com/recipes-menus	RECIPE	-	false	en listeleme
+r-movie-01	https://www.imdb.com/chart/top/	MOVIE	-	false	en film listesi
+r-movie-02	https://letterboxd.com/films/popular/	MOVIE	-	false	en film
+r-movie-03	https://www.beyazperde.com/filmler/vizyondakiler/	MOVIE	-	false	tr film
+r-movie-04	https://www.rottentomatoes.com/browse/movies_in_theaters/	MOVIE	-	false	en film
+r-movie-05	https://www.themoviedb.org/movie	MOVIE	-	false	en film
+r-movie-06	https://www.justwatch.com/tr/filmler	MOVIE	-	false	tr film
+r-movie-07	https://www.rogerebert.com/reviews	MOVIE	-	false	en elestiri
+r-movie-08	https://www.sinemalar.com/vizyondakiler	MOVIE	-	false	tr film
+r-series-01	https://www.imdb.com/chart/toptv/	SERIES	-	false	en dizi
+r-series-02	https://www.tvmaze.com/shows	SERIES	-	false	en dizi
+r-series-03	https://www.netflix.com/tr/browse/genre/83	SERIES	-	false	tr dizi
+r-series-04	https://www.justwatch.com/tr/diziler	SERIES	-	false	tr dizi
+r-series-05	https://www.rottentomatoes.com/browse/tv_series_browse/	SERIES	-	false	en dizi
+r-series-06	https://tabii.com/tr/home	SERIES	-	false	tr platform
+r-series-07	https://www.beyazperde.com/diziler/	SERIES	-	false	tr dizi
+r-news-01	https://www.sozcu.com.tr/gundem/	NEWS	-	false	tr haber
+r-news-02	https://www.hurriyet.com.tr/gundem/	NEWS	-	false	tr haber
+r-news-03	https://www.ntv.com.tr/turkiye	NEWS	-	false	tr haber
+r-news-04	https://www.aa.com.tr/tr/gundem	NEWS	-	false	tr ajans
+r-news-05	https://www.bbc.com/turkce	NEWS	-	false	tr haber
+r-news-06	https://www.reuters.com/business/	NEWS	-	false	en haber
+r-news-07	https://apnews.com/	NEWS	-	false	en ajans
+r-news-08	https://www.theguardian.com/international	NEWS	-	false	en haber
+r-news-09	https://www.cnnturk.com/	NEWS	-	false	tr haber
+r-news-10	https://www.milliyet.com.tr/gundem/	NEWS	-	false	tr haber
+r-politics-01	https://www.politico.com/congress	POLITICS	-	false	en siyaset
+r-politics-02	https://www.theguardian.com/politics	POLITICS	-	false	en siyaset
+r-politics-03	https://www.tbmm.gov.tr/	POLITICS	-	false	tr meclis
+r-politics-04	https://www.resmigazete.gov.tr/	POLITICS	-	false	tr resmi
+r-politics-05	https://www.un.org/en/	POLITICS	-	false	en uluslararasi
+r-politics-06	https://www.nato.int/	POLITICS	-	false	en uluslararasi
+r-politics-07	https://www.bbc.com/news/politics	POLITICS	-	false	en siyaset
+r-finance-01	https://www.doviz.com/	FINANCE	-	false	tr kur
+r-finance-02	https://bigpara.hurriyet.com.tr/borsa/	FINANCE	-	false	tr borsa
+r-finance-03	https://www.bloomberght.com/borsa	FINANCE	-	false	tr finans
+r-finance-04	https://www.investing.com/currencies/	FINANCE	-	false	en piyasa
+r-finance-05	https://coinmarketcap.com/	FINANCE	-	false	en kripto
+r-finance-06	https://www.tcmb.gov.tr/	FINANCE	-	false	tr merkez bankasi
+r-finance-07	https://www.cnbc.com/quotes/	FINANCE	-	false	en piyasa
+r-finance-08	https://www.marketwatch.com/investing/stock/aapl	FINANCE	-	false	en hisse
+r-place-01	https://www.tripadvisor.com.tr/Attractions-g293974-Activities-Istanbul.html	PLACE	-	false	tr gezi
+r-place-02	https://www.booking.com/city/tr/istanbul.tr.html	PLACE	-	false	tr otel
+r-place-03	https://www.lonelyplanet.com/turkey/istanbul	PLACE	-	false	en gezi
+r-place-04	https://www.tripadvisor.com/Restaurants-g293974-Istanbul.html	PLACE	-	false	en restoran
+r-place-05	https://tr.wikivoyage.org/wiki/%C4%B0stanbul	PLACE	-	false	tr gezi rehberi
+r-place-06	https://www.kulturportali.gov.tr/turkiye/istanbul/gezilecekyer	PLACE	-	false	tr kultur
+r-place-07	https://whc.unesco.org/en/list/	PLACE	-	false	en miras
+r-product-01	https://www.trendyol.com/erkek-ayakkabi-x-g2-c114	PRODUCT	-	false	tr eticaret
+r-product-02	https://www.hepsiburada.com/telefonlar-c-371965	PRODUCT	-	false	tr eticaret
+r-product-03	https://www.n11.com/bilgisayar	PRODUCT	-	false	tr eticaret
+r-product-04	https://www.amazon.com.tr/s?k=kulaklik	PRODUCT	-	false	tr eticaret
+r-product-05	https://www.mediamarkt.com.tr/tr/category/dizustu-bilgisayar-576.html	PRODUCT	-	false	tr eticaret
+r-product-06	https://www.ikea.com.tr/kategori/yatak-odasi	PRODUCT	-	false	tr mobilya
+r-product-07	https://www.decathlon.com.tr/kosu	PRODUCT	-	false	tr spor urun
+r-product-08	https://www.zara.com/tr/	PRODUCT	-	false	tr giyim
+r-product-09	https://www.apple.com/tr/iphone/	PRODUCT	-	false	tr urun
+r-product-10	https://www.bestbuy.com/site/laptop-computers/all-laptops/pcmcat138500050001.c	PRODUCT	-	false	en eticaret
+r-sport-01	https://www.fotomac.com.tr/	SPORT	-	false	tr spor
+r-sport-02	https://www.sporx.com/	SPORT	-	false	tr spor
+r-sport-03	https://www.ntvspor.net/	SPORT	-	false	tr spor
+r-sport-04	https://www.tff.org/Default.aspx?pageID=545	SPORT	-	false	tr futbol
+r-sport-05	https://www.espn.com/	SPORT	-	false	en spor
+r-sport-06	https://www.skysports.com/football	SPORT	-	false	en futbol
+r-sport-07	https://www.uefa.com/uefachampionsleague/standings/	SPORT	-	false	en futbol
+r-sport-08	https://www.nba.com/games	SPORT	-	false	en basketbol
+r-sport-09	https://www.formula1.com/en/results.html	SPORT	-	false	en motorspor
+r-game-01	https://store.steampowered.com/	GAME	-	false	en oyun magaza
+r-game-02	https://store.epicgames.com/tr/	GAME	-	false	tr oyun magaza
+r-game-03	https://www.ign.com/reviews/games	GAME	-	false	en oyun medya
+r-game-04	https://www.metacritic.com/browse/game/	GAME	-	false	en oyun
+r-game-05	https://itch.io/games	GAME	-	false	en indie oyun
+r-game-06	https://www.gamespot.com/games/reviews/	GAME	-	false	en oyun medya
+r-game-07	https://play.google.com/store/games	GAME	-	false	mobil oyun magaza
+r-ai-01	https://openai.com/news/	AI	-	false	en ai
+r-ai-02	https://www.anthropic.com/news	AI	-	false	en ai
+r-ai-03	https://huggingface.co/models	AI	-	false	en ai hub
+r-ai-04	https://paperswithcode.com/	AI	-	false	en ai
+r-ai-05	https://arxiv.org/list/cs.AI/recent	AI	-	false	en ai makale
+r-ai-06	https://deepmind.google/discover/blog/	AI	-	false	en ai
+r-ai-07	https://webrazzi.com/kategori/yapay-zeka/	AI	-	false	tr ai haber
+r-science-01	https://www.nasa.gov/	SCIENCE	-	false	en uzay
+r-science-02	https://www.esa.int/	SCIENCE	-	false	en uzay
+r-science-03	https://www.sciencedaily.com/	SCIENCE	-	false	en bilim
+r-science-04	https://phys.org/	SCIENCE	-	false	en fizik
+r-science-05	https://www.nature.com/	SCIENCE	-	false	en bilim
+r-science-06	https://evrimagaci.org/	SCIENCE	-	false	tr bilim
+r-science-07	https://bilimfili.com/	SCIENCE	-	false	tr bilim
+r-science-08	https://www.scientificamerican.com/	SCIENCE	-	false	en bilim
+r-book-01	https://www.goodreads.com/list/popular_lists	BOOK	-	false	en kitap
+r-book-02	https://www.kitapyurdu.com/index.php?route=product/best_sellers	BOOK	-	false	tr kitap
+r-book-03	https://www.idefix.com/kitap	BOOK	-	false	tr kitap
+r-book-04	https://www.gutenberg.org/browse/scores/top	BOOK	-	false	en ekitap
+r-book-05	https://openlibrary.org/trending/daily	BOOK	-	false	en kitap
+r-book-06	https://www.dr.com.tr/kategori/kitap	BOOK	-	false	tr kitap
+r-music-01	https://open.spotify.com/	MUSIC	-	false	muzik platform
+r-music-02	https://genius.com/	MUSIC	-	false	en sozler
+r-music-03	https://www.last.fm/charts	MUSIC	-	false	en muzik
+r-music-04	https://bandcamp.com/discover	MUSIC	-	false	en muzik
+r-music-05	https://pitchfork.com/reviews/albums/	MUSIC	-	false	en muzik elestiri
+r-music-06	https://www.billboard.com/charts/hot-100/	MUSIC	-	false	en liste
+r-music-07	https://music.youtube.com/	MUSIC	-	false	muzik platform
+r-video-01	https://www.youtube.com/	VIDEO	-	false	video
+r-video-02	https://www.youtube.com/feed/trending	VIDEO	-	false	video
+r-video-03	https://www.youtube.com/results?search_query=nas%C4%B1l+yap%C4%B1l%C4%B1r	VIDEO	-	false	tr video arama
+r-video-04	https://www.twitch.tv/directory/all	VIDEO	-	false	yayin
+r-video-05	https://vimeo.com/watch	VIDEO	-	false	video
+r-video-06	https://www.dailymotion.com/tr	VIDEO	-	false	video
+r-video-07	https://www.youtube.com/shorts	VIDEO	-	false	kisa video
+r-social-01	https://www.reddit.com/r/popular/	SOCIAL	-	false	en sosyal
+r-social-02	https://news.ycombinator.com/	SOCIAL	-	false	en forum
+r-social-03	https://eksisozluk.com/basliklar/gundem	SOCIAL	-	false	tr sozluk
+r-social-04	https://forum.donanimhaber.com/	SOCIAL	-	false	tr forum
+r-social-05	https://mastodon.social/explore	SOCIAL	-	false	en sosyal
+r-social-06	https://lobste.rs/	SOCIAL	-	false	en forum
+r-social-07	https://www.reddit.com/r/AskReddit/	SOCIAL	-	false	en sosyal
+r-other-01	https://www.mgm.gov.tr/	OTHER	-	false	tr hava durumu
+r-other-02	https://weather.com/	OTHER	-	false	en hava durumu
+r-other-03	https://www.calculator.net/	OTHER	-	false	hesap makinesi
+r-other-04	https://translate.google.com/	OTHER	-	false	ceviri
+r-other-05	https://sozluk.gov.tr/	OTHER	-	false	tr sozluk
+r-other-06	https://dictionary.cambridge.org/	OTHER	-	false	en sozluk
+r-other-07	https://www.timeanddate.com/worldclock/	OTHER	-	false	saat
+r-other-08	https://www.unitconverters.net/	OTHER	-	false	birim cevirici

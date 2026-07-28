@@ -1,0 +1,103 @@
+# Project Memento - Ingilizce kapsama korpusu v1
+# Amac: siniflandiricinin Ingilizce genelleme acigini kapatmak.
+# id soneki: -d* = DEV (tuning hedefi), -h* = HOLDOUT v2 (kor olcum; tuning'de GORULMEZ).
+# Holdout v1'den FARKLI sayfalar secildi. intent tum satirlarda "-" (olcum disi).
+# 16 topic x 6 = 96 (3 dev + 3 holdout). Yakalama sirasinda basarisiz olan URL ayni
+# kategoride baska guvenilir kaynakla degistirilir.
+id	url	topic	intent	sensitive	note
+en-recipe-d1	https://www.allrecipes.com/recipe/23600/worlds-best-lasagna/	RECIPE	-	false	en recipe publisher
+en-recipe-d2	https://www.bbcgoodfood.com/recipes/spaghetti-bolognese-recipe	RECIPE	-	false	en recipe publisher
+en-recipe-d3	https://en.wikipedia.org/wiki/Cheeseburger	RECIPE	-	false	en wiki food
+en-recipe-h1	https://www.simplyrecipes.com/recipes/homemade_pizza/	RECIPE	-	false	en recipe publisher
+en-recipe-h2	https://www.seriouseats.com/the-best-chocolate-chip-cookies-recipe	RECIPE	-	false	en recipe publisher
+en-recipe-h3	https://en.wikipedia.org/wiki/Pancake	RECIPE	-	false	en wiki food
+en-movie-d1	https://en.wikipedia.org/wiki/Oppenheimer_(film)	MOVIE	-	false	en wiki film
+en-movie-d2	https://www.rogerebert.com/reviews/dune-part-two-movie-review-2024	MOVIE	-	false	en film review
+en-movie-d3	https://en.wikipedia.org/wiki/The_Godfather	MOVIE	-	false	en wiki film
+en-movie-h1	https://en.wikipedia.org/wiki/Interstellar_(film)	MOVIE	-	false	en wiki film
+en-movie-h2	https://en.wikipedia.org/wiki/Parasite_(2019_film)	MOVIE	-	false	en wiki film
+en-movie-h3	https://www.rottentomatoes.com/m/the_batman	MOVIE	-	false	en film aggregator
+en-series-d1	https://en.wikipedia.org/wiki/Breaking_Bad	SERIES	-	false	en wiki tv series
+en-series-d2	https://en.wikipedia.org/wiki/The_Wire	SERIES	-	false	en wiki tv series
+en-series-d3	https://www.imdb.com/title/tt0903747/	SERIES	-	false	en tv series
+en-series-h1	https://en.wikipedia.org/wiki/Stranger_Things	SERIES	-	false	en wiki tv series
+en-series-h2	https://en.wikipedia.org/wiki/Game_of_Thrones	SERIES	-	false	en wiki tv series
+en-series-h3	https://www.tvmaze.com/shows/82/game-of-thrones	SERIES	-	false	en tv series db
+en-news-d1	https://www.reuters.com/world/	NEWS	-	false	en news wire
+en-news-d2	https://www.npr.org/sections/news/	NEWS	-	false	en news
+en-news-d3	https://www.aljazeera.com/news/	NEWS	-	false	en news
+en-news-h1	https://www.bbc.com/news	NEWS	-	false	en news
+en-news-h2	https://apnews.com/hub/world-news	NEWS	-	false	en news wire
+en-news-h3	https://www.theguardian.com/world	NEWS	-	false	en news
+en-politics-d1	https://en.wikipedia.org/wiki/United_States_Congress	POLITICS	-	false	en wiki politics
+en-politics-d2	https://www.politico.com/	POLITICS	-	false	en politics publisher
+en-politics-d3	https://en.wikipedia.org/wiki/European_Parliament	POLITICS	-	false	en wiki politics
+en-politics-h1	https://en.wikipedia.org/wiki/Prime_Minister_of_the_United_Kingdom	POLITICS	-	false	en wiki politics
+en-politics-h2	https://www.theguardian.com/politics	POLITICS	-	false	en politics section
+en-politics-h3	https://en.wikipedia.org/wiki/Cabinet_of_the_United_States	POLITICS	-	false	en wiki politics
+en-finance-d1	https://www.federalreserve.gov/	FINANCE	-	false	en central bank
+en-finance-d2	https://www.cnbc.com/markets/	FINANCE	-	false	en markets
+en-finance-d3	https://en.wikipedia.org/wiki/Inflation	FINANCE	-	false	en wiki finance
+en-finance-h1	https://www.ecb.europa.eu/home/html/index.en.html	FINANCE	-	false	en central bank
+en-finance-h2	https://www.marketwatch.com/	FINANCE	-	false	en markets
+en-finance-h3	https://en.wikipedia.org/wiki/Stock_market	FINANCE	-	false	en wiki finance
+en-place-d1	https://en.wikipedia.org/wiki/Grand_Canyon	PLACE	-	false	en wiki place
+en-place-d2	https://www.tripadvisor.com/Attraction_Review-g60713-d102775-Reviews-Golden_Gate_Bridge-San_Francisco_California.html	PLACE	-	false	en travel
+en-place-d3	https://en.wikipedia.org/wiki/Colosseum	PLACE	-	false	en wiki place
+en-place-h1	https://en.wikipedia.org/wiki/Machu_Picchu	PLACE	-	false	en wiki place
+en-place-h2	https://www.lonelyplanet.com/japan/tokyo	PLACE	-	false	en travel guide
+en-place-h3	https://en.wikipedia.org/wiki/Eiffel_Tower	PLACE	-	false	en wiki place
+en-product-d1	https://www.apple.com/macbook-air/	PRODUCT	-	false	en product
+en-product-d2	https://www.samsung.com/us/smartphones/galaxy-s24-ultra/	PRODUCT	-	false	en product
+en-product-d3	https://www.dyson.com/vacuum-cleaners/cordless	PRODUCT	-	false	en product
+en-product-h1	https://www.bestbuy.com/site/apple-airpods-pro-2nd-generation/4900964.p	PRODUCT	-	false	en retail product
+en-product-h2	https://www.ikea.com/us/en/p/malm-bed-frame-high-white-luroey-s09009475/	PRODUCT	-	false	en retail product
+en-product-h3	https://www.logitech.com/en-us/products/mice/mx-master-3s.html	PRODUCT	-	false	en product
+en-sport-d1	https://www.espn.com/nba/	SPORT	-	false	en sport
+en-sport-d2	https://www.nba.com/standings	SPORT	-	false	en sport league
+en-sport-d3	https://en.wikipedia.org/wiki/Premier_League	SPORT	-	false	en wiki sport
+en-sport-h1	https://www.espn.com/soccer/	SPORT	-	false	en sport
+en-sport-h2	https://www.nfl.com/scores/	SPORT	-	false	en sport league
+en-sport-h3	https://en.wikipedia.org/wiki/UEFA_Champions_League	SPORT	-	false	en wiki sport
+en-game-d1	https://store.steampowered.com/app/1245620/ELDEN_RING/	GAME	-	false	en game store
+en-game-d2	https://www.ign.com/games/the-legend-of-zelda-tears-of-the-kingdom	GAME	-	false	en game media
+en-game-d3	https://en.wikipedia.org/wiki/The_Witcher_3:_Wild_Hunt	GAME	-	false	en wiki game
+en-game-h1	https://en.wikipedia.org/wiki/Baldur%27s_Gate_3	GAME	-	false	en wiki game
+en-game-h2	https://store.steampowered.com/app/1091500/Cyberpunk_2077/	GAME	-	false	en game store
+en-game-h3	https://en.wikipedia.org/wiki/Hades_(video_game)	GAME	-	false	en wiki game
+en-ai-d1	https://openai.com/index/hello-gpt-4o/	AI	-	false	en ai
+en-ai-d2	https://huggingface.co/models	AI	-	false	en ai hub
+en-ai-d3	https://en.wikipedia.org/wiki/Large_language_model	AI	-	false	en wiki ai
+en-ai-h1	https://www.anthropic.com/news	AI	-	false	en ai
+en-ai-h2	https://arxiv.org/abs/1706.03762	AI	-	false	en ai paper
+en-ai-h3	https://en.wikipedia.org/wiki/Neural_network	AI	-	false	en wiki ai
+en-book-d1	https://www.goodreads.com/book/show/5907.The_Hobbit	BOOK	-	false	en book
+en-book-d2	https://en.wikipedia.org/wiki/Nineteen_Eighty-Four	BOOK	-	false	en wiki book
+en-book-d3	https://www.gutenberg.org/ebooks/1342	BOOK	-	false	en ebook
+en-book-h1	https://www.goodreads.com/book/show/2767052-the-hunger-games	BOOK	-	false	en book
+en-book-h2	https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird	BOOK	-	false	en wiki book
+en-book-h3	https://openlibrary.org/works/OL45804W/Fantastic_Mr_Fox	BOOK	-	false	en ebook lib
+en-music-d1	https://en.wikipedia.org/wiki/Thriller_(album)	MUSIC	-	false	en wiki music
+en-music-d2	https://pitchfork.com/reviews/albums/	MUSIC	-	false	en music media
+en-music-d3	https://en.wikipedia.org/wiki/The_Beatles	MUSIC	-	false	en wiki music
+en-music-h1	https://en.wikipedia.org/wiki/Random_Access_Memories	MUSIC	-	false	en wiki music
+en-music-h2	https://www.billboard.com/charts/hot-100/	MUSIC	-	false	en music chart
+en-music-h3	https://en.wikipedia.org/wiki/Kendrick_Lamar	MUSIC	-	false	en wiki music
+en-video-d1	https://www.youtube.com/watch?v=aqz-KE-bpKQ	VIDEO	-	false	en video
+en-video-d2	https://www.youtube.com/results?search_query=how+to+tie+a+tie	VIDEO	-	false	en video search
+en-video-d3	https://vimeo.com/staffpicks	VIDEO	-	false	en video platform
+en-video-h1	https://www.youtube.com/watch?v=dQw4w9WgXcQ	VIDEO	-	false	en video
+en-video-h2	https://www.twitch.tv/directory	VIDEO	-	false	en video platform
+en-video-h3	https://www.youtube.com/feed/trending	VIDEO	-	false	en video
+en-social-d1	https://www.reddit.com/r/technology/	SOCIAL	-	false	en social
+en-social-d2	https://news.ycombinator.com/	SOCIAL	-	false	en forum
+en-social-d3	https://mastodon.social/explore	SOCIAL	-	false	en social
+en-social-h1	https://www.reddit.com/r/AskReddit/	SOCIAL	-	false	en social
+en-social-h2	https://lobste.rs/	SOCIAL	-	false	en forum
+en-social-h3	https://www.reddit.com/r/science/	SCIENCE	-	false	en social
+en-other-d1	https://en.wikipedia.org/wiki/Photosynthesis	SCIENCE	-	false	en wiki generic
+en-other-d2	https://en.wikipedia.org/wiki/Black_hole	SCIENCE	-	false	en wiki generic
+en-other-d3	https://weather.com/weather/today/	OTHER	-	false	en utility
+en-other-h1	https://en.wikipedia.org/wiki/Volcano	SCIENCE	-	false	en wiki generic
+en-other-h2	https://en.wikipedia.org/wiki/DNA	SCIENCE	-	false	en wiki generic
+en-other-h3	https://dictionary.cambridge.org/dictionary/english/serendipity	OTHER	-	false	en utility
