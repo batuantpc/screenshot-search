@@ -1,4 +1,4 @@
-# Project Memento - web korpusu manifesti (tools/capture-web-corpus.py girdisi)
+# Screenshot Search - web korpusu manifesti (tools/capture-web-corpus.py girdisi)
 # Sutunlar: id / url / topic / intent / sensitive / note   -- ayirici: TAB
 # topic ve intent degerleri android/.../data/ScreenshotItem.kt icindeki enum'larla birebir ayni.
 # topic  : RECIPE MOVIE SERIES NEWS POLITICS FINANCE PLACE PRODUCT SPORT GAME AI BOOK MUSIC VIDEO SOCIAL OTHER

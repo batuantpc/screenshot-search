@@ -1,7 +1,7 @@
 """Evaluate an actual vision-language model on the native screenshot holdout.
 
 Unlike the ImageNet MobileNet experiment, MobileCLIP was trained to align images
-with natural-language concepts. This is the relevant architecture for Memento:
+with natural-language concepts. This is the relevant architecture for Screenshot Search:
 the model can compare a screenshot with prompts such as "a recipe screenshot" or
 "a sports screenshot" instead of relying on OCR token collisions.
 

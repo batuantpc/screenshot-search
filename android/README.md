@@ -1,4 +1,4 @@
-# Project Memento Android
+# Screenshot Search Android
 
 Android-first, local screenshot search MVP.
 

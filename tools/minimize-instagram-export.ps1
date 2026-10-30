@@ -82,7 +82,7 @@ function Get-MediaType {
     return 'unknown'
 }
 
-function Get-MementoTopic {
+function Get-ScreenshotSearchTopic {
     param([string]$Value)
 
     $text = ConvertTo-NormalizedText $Value
@@ -151,7 +151,7 @@ if (Test-Path -LiteralPath $topicFile) {
     $topicDocument = Get-Content -LiteralPath $topicFile -Raw -Encoding utf8 | ConvertFrom-Json
     foreach ($item in $topicDocument.topics_your_topics) {
         $topicTotal++
-        $mappedTopic = Get-MementoTopic ([string]$item.string_map_data.Name.value)
+        $mappedTopic = Get-ScreenshotSearchTopic ([string]$item.string_map_data.Name.value)
         if (!$topicCounts.Contains($mappedTopic)) { $topicCounts[$mappedTopic] = 0 }
         $topicCounts[$mappedTopic]++
     }

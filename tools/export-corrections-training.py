@@ -25,7 +25,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = REPO_ROOT / ".private-data" / "device" / "memento.db"
+DB_PATH = REPO_ROOT / ".private-data" / "device" / "screenshot_search.db"
 OUT_PATH = REPO_ROOT / ".private-data" / "eval" / "user-corrections.eval"
 
 VALID_TOPICS = {

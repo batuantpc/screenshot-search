@@ -1,4 +1,4 @@
-# Project Memento — Proje Durumu
+# Screenshot Search — Proje Durumu
 
 Son güncelleme: 28 Temmuz 2026
 
@@ -14,7 +14,7 @@ araştırmalar `outputs/` altındadır.
 
 ## 1. Yönetici özeti
 
-Memento, telefondaki screenshot'ları otomatik keşfedip cihaz üzerinde OCR ile aranabilir
+Screenshot Search, telefondaki screenshot'ları otomatik keşfedip cihaz üzerinde OCR ile aranabilir
 hale getiren kişisel bir screenshot hafızasıdır.
 
 0.2.0 ile ürünün merkezi kararını değiştirdik:
@@ -102,7 +102,7 @@ Sınıflandırma akışı:
 
 Kullanıcıya söylenebilecek doğru cümle:
 
-> Memento screenshot'larını telefonunda aranabilir hale getirir. Açık kanıt varsa bir
+> Screenshot Search screenshot'larını telefonunda aranabilir hale getirir. Açık kanıt varsa bir
 > koleksiyon önerir; emin değilse etiket uydurmaz.
 
 ## 5. Doğrulama durumu
@@ -193,7 +193,7 @@ native öneri kesinliği anlamlı kapsamda ≥%80 olmadan APK'ye eklenmemelidir.
 
 ### P2 — yayın hazırlığı
 
-`Memento` ürün kod adıdır. Marka araştırması, kesin paket kimliği, gizlilik politikası,
+`Screenshot Search` düz çalışma adıdır (eski kod adı: Memento, 2026-10-30'da değişti). Marka araştırması, kesin paket kimliği, gizlilik politikası,
 mağaza metinleri ve dağıtım kanalı kapalı alfa sinyali geldikten sonra tamamlanır.
 
 Şimdilik yapılmaması gerekenler:
@@ -205,7 +205,7 @@ mağaza metinleri ve dağıtım kanalı kapalı alfa sinyali geldikten sonra tam
 
 ## 9. Çalışma ve teslim düzeni
 
-- GitHub: `batuantpc/project-memento`
+- GitHub: `batuantpc/screenshot-search`
 - Kanonik dal: `main`
 - `.private-data/`: ham/katılımcı veri, cihaz ekranları ve özel holdout; Git dışında.
 - `android/keystore.properties`: imza sırları; Git dışında.
@@ -213,4 +213,4 @@ mağaza metinleri ve dağıtım kanalı kapalı alfa sinyali geldikten sonra tam
 
 ## 10. İlgili kanıtlar
 
-- `outputs/project-memento-0.2.0-search-first-kabul-2026-07-28.md`
+- `outputs/screenshot-search-0.2.0-search-first-kabul-2026-07-28.md`

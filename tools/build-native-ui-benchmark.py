@@ -2,7 +2,7 @@
 
 Source data is Enrico: 1,460 human-curated Android UI screenshots derived from
 RICO. Enrico's labels describe *screen layout* (login, profile, news, ...), not
-Memento's content topics. This tool therefore creates gold labels only where the
+Screenshot Search's content topics. This tool therefore creates gold labels only where the
 combination of layout and Google Play category is unambiguous:
 
 * login/settings/terms/tutorial/forms and similar app chrome -> OTHER

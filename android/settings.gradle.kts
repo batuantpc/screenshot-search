@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "ProjectMemento"
+rootProject.name = "ScreenshotSearch"
 include(":app")

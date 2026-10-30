@@ -24,7 +24,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_OUT = REPO_ROOT / "tools" / "corpus-feed-v1.tsv"
-UA = "ProjectMementoCorpusBot/1.0 (personal research project)"
+UA = "ScreenshotSearchCorpusBot/1.0 (personal research project)"
 REQUEST_DELAY = 0.8
 
 # topic -> akis adresleri. TR + EN karisik, kategori basina cok sayida FARKLI domain.
@@ -210,7 +210,7 @@ def main() -> None:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", encoding="utf-8", newline="\n") as fh:
-        fh.write("# Project Memento - RSS akislarindan gercek-dunya makale korpusu\n")
+        fh.write("# Screenshot Search - RSS akislarindan gercek-dunya makale korpusu\n")
         fh.write("# Uretici: tools/generate-corpus-from-feeds.py\n")
         fh.write("# Yayinlarin kendi guncel makaleleri: gercek gorsel duzen, reklam, yorum alani.\n")
         fh.write("id\turl\ttopic\tintent\tsensitive\tnote\n")

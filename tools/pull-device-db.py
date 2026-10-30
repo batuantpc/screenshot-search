@@ -1,6 +1,6 @@
 """Cihaz veritabanini GUVENLI cekar: bozuk cekme iyi kopyayi ezmez.
 
-Neden ayri arac: USB baglantisi koptugunda `adb exec-out ... > memento.db` yonlendirmesi
+Neden ayri arac: USB baglantisi koptugunda `adb exec-out ... > screenshot_search.db` yonlendirmesi
 dosyayi 0 byte'a indiriyor ve o ana kadarki iyi kopya kayboluyor. Bu arac once gecici
 dosyaya ceker, SQLite olarak acilip beklenen tabloyu icerdigini dogrular, ancak ondan
 sonra hedefin uzerine yazar.
@@ -22,8 +22,8 @@ import tempfile
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = REPO_ROOT / ".private-data" / "device" / "memento.db"
-PACKAGE = "com.projectmemento.app"
+DB_PATH = REPO_ROOT / ".private-data" / "device" / "screenshot_search.db"
+PACKAGE = "com.screenshotsearch.app"
 
 
 def find_adb() -> str:
@@ -52,7 +52,7 @@ def pull(adb: str) -> bool:
         return False
 
     result = subprocess.run(
-        [adb, "exec-out", "run-as", PACKAGE, "cat", "databases/memento.db"],
+        [adb, "exec-out", "run-as", PACKAGE, "cat", "databases/screenshot_search.db"],
         capture_output=True,
     )
     if result.returncode != 0 or len(result.stdout) < 4096:

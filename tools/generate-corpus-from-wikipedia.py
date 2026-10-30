@@ -32,7 +32,7 @@ EXISTING_MANIFESTS = [
     REPO_ROOT / "tools" / "corpus-en-v1.tsv",
 ]
 
-UA = "ProjectMementoCorpusBot/1.0 (personal research project; Python urllib)"
+UA = "ScreenshotSearchCorpusBot/1.0 (personal research project; Python urllib)"
 # API'yi yormamak icin her istek arasi bekleme (anonim kullanimda 429 yiyoruz).
 REQUEST_DELAY = 1.2
 
@@ -268,7 +268,7 @@ def main() -> None:
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     with args.out.open("w", encoding="utf-8", newline="\n") as fh:
-        fh.write("# Project Memento - Wikipedia tabanli egitim korpusu\n")
+        fh.write("# Screenshot Search - Wikipedia tabanli egitim korpusu\n")
         fh.write("# Uretici: tools/generate-corpus-from-wikipedia.py (kategori API'si)\n")
         fh.write("# Amac: kural ezberi yerine VERIYLE egitim. TR+EN karisik.\n")
         fh.write("# intent tum satirlarda '-' (olculmez). sensitive=false (kamuya acik sayfalar).\n")

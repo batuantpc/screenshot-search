@@ -6,7 +6,7 @@ ground-truth'unu yazar (Kotlin re-run testi icin). Bu yuzden score-web-corpus.py
 holdout eval'de topic'i ground-truth ile ground-truth kiyaslar ve yanlislikla %100
 uretir. Gercek kor baseline, cihazin DB'de sakladigi tahmindir (screenshot_items.topic).
 
-Girdi : .private-data/device/memento.db  (export-device-eval.py cekmis olmali)
+Girdi : .private-data/device/screenshot_search.db  (export-device-eval.py cekmis olmali)
         tools/corpus-holdout-v1.tsv        (ground truth: topic + sensitive)
 Cikti : konsol + .private-data/holdout-v1/blind-baseline.md   (Git'e GIRMEZ)
 
@@ -23,7 +23,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = REPO_ROOT / ".private-data" / "device" / "memento.db"
+DB_PATH = REPO_ROOT / ".private-data" / "device" / "screenshot_search.db"
 MANIFEST_PATH = REPO_ROOT / "tools" / "corpus-holdout-v1.tsv"
 REPORT_PATH = REPO_ROOT / ".private-data" / "holdout-v1" / "blind-baseline.md"
 
@@ -129,7 +129,7 @@ def main() -> None:
     # -------- rapor --------
     L: list[str] = []
     a = L.append
-    a("# Project Memento — Web Holdout v1 Kör Baseline")
+    a("# Screenshot Search — Web Holdout v1 Kör Baseline")
     a("")
     a(f"Tarih: {datetime.now(timezone.utc).astimezone().strftime('%Y-%m-%d %H:%M %z')}")
     a("")

@@ -1,4 +1,4 @@
-# Project Memento - RSS akislarindan gercek-dunya makale korpusu
+# Screenshot Search - RSS akislarindan gercek-dunya makale korpusu
 # Uretici: tools/generate-corpus-from-feeds.py
 # Yayinlarin kendi guncel makaleleri: gercek gorsel duzen, reklam, yorum alani.
 id	url	topic	intent	sensitive	note

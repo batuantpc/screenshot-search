@@ -2,7 +2,7 @@
 
 This is deliberately separate from the OCR model. A frozen ImageNet-pretrained
 MobileNetV3-Small converts the full screenshot to a visual embedding; a balanced
-linear head learns Memento topics from conservatively labeled Enrico screens.
+linear head learns Screenshot Search topics from conservatively labeled Enrico screens.
 
 Leakage rule: every app_id present in native-ui-v1 (the 300-screen blind set) is
 excluded wholesale from training. Screens from the same app can therefore never
@@ -97,7 +97,7 @@ class ExportModel(nn.Module):
 
 def load_benchmark_module():
     path = REPO_ROOT / "tools" / "build-native-ui-benchmark.py"
-    spec = importlib.util.spec_from_file_location("memento_native_benchmark", path)
+    spec = importlib.util.spec_from_file_location("screenshot_search_native_benchmark", path)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"Benchmark araci yuklenemedi: {path}")
     module = importlib.util.module_from_spec(spec)

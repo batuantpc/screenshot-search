@@ -144,14 +144,14 @@ def browser_chrome_js(url: str, clock: str) -> str:
         "(() => { const cfg = " + payload + r""";
   const body = document.body;
   if (!body) return false;
-  document.getElementById('__memento_browser_ui')?.remove();
+  document.getElementById('__screenshot_search_browser_ui')?.remove();
   // Steam gibi siteler layout viewport'u gorsel viewport'tan genis tutuyor; "right:0"
   // kullanirsak cubugun sag ucu ekran disinda kaliyor. Genisligi gorsel viewport'tan aliyoruz.
   const visualWidth = Math.round(
     (window.visualViewport && window.visualViewport.width) || document.documentElement.clientWidth
   );
   const host = document.createElement('div');
-  host.id = '__memento_browser_ui';
+  host.id = '__screenshot_search_browser_ui';
   for (const [prop, value] of Object.entries({
     position: 'fixed', top: '0px', left: '0px', width: visualWidth + 'px',
     height: cfg.chrome + 'px', 'z-index': '2147483647', margin: '0px',
@@ -307,7 +307,7 @@ class HeadlessChrome:
     def __init__(self, binary: str, timeout: float) -> None:
         self.binary = binary
         self.timeout = timeout
-        self.profile_dir = Path(tempfile.mkdtemp(prefix="memento-corpus-"))
+        self.profile_dir = Path(tempfile.mkdtemp(prefix="screenshot-search-corpus-"))
         self.process: subprocess.Popen[bytes] | None = None
         self.ws: WebSocket | None = None
         self._message_id = 0
@@ -557,7 +557,7 @@ def read_labels(path: Path) -> dict[str, list[str]]:
 def write_labels(path: Path, rows: dict[str, list[str]]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf-8", newline="\n") as out:
-        out.write("# Project Memento web korpusu - ground truth etiketleri\n")
+        out.write("# Screenshot Search web korpusu - ground truth etiketleri\n")
         out.write("# Uretici: tools/capture-web-corpus.py  |  Git'e GIRMEZ\n")
         out.write("id\tfile\ttopic\tintent\tsensitive\turl\tcaptured_at\n")
         for key in sorted(rows):

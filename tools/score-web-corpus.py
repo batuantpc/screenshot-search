@@ -383,7 +383,7 @@ Kullanicinin kendi screenshot'i, korpusa ait degil
 
 def self_test() -> None:
     """Cihaz olmadan mantigi dogrular: eslesme, dogruluk, karisiklik, uyarilar."""
-    with tempfile.TemporaryDirectory(prefix="memento-score-") as tmp:
+    with tempfile.TemporaryDirectory(prefix="screenshot-search-score-") as tmp:
         root = Path(tmp)
         labels_path = root / "labels.tsv"
         eval_path = root / "device.eval"

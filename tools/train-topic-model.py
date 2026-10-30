@@ -1,4 +1,4 @@
-"""Memento konu modelini kaynak sizintisi olmadan egitir ve olcer.
+"""Screenshot Search konu modelini kaynak sizintisi olmadan egitir ve olcer.
 
 Temel kurallar:
   * Egitim dosyalari acik allowlist'tir; adinda holdout/test gecen hicbir dosya modele girmez.

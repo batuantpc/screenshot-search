@@ -20,7 +20,7 @@ import sys
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DB_PATH = REPO_ROOT / ".private-data" / "device" / "memento.db"
+DB_PATH = REPO_ROOT / ".private-data" / "device" / "screenshot_search.db"
 EVAL_DIR = REPO_ROOT / ".private-data" / "eval"
 
 

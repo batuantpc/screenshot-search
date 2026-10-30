@@ -1,4 +1,4 @@
-"""Cihazdaki Memento veritabanini ceker ve ozel eval setine donusturur.
+"""Cihazdaki Screenshot Search veritabanini ceker ve ozel eval setine donusturur.
 
 Kullanim (repo kokunden, telefon USB ile bagliyken):
     python tools/export-device-eval.py
@@ -16,10 +16,10 @@ import subprocess
 import sys
 from pathlib import Path
 
-PACKAGE = "com.projectmemento.app"
+PACKAGE = "com.screenshotsearch.app"
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PRIVATE_DIR = REPO_ROOT / ".private-data"
-DB_PATH = PRIVATE_DIR / "device" / "memento.db"
+DB_PATH = PRIVATE_DIR / "device" / "screenshot_search.db"
 EVAL_PATH = PRIVATE_DIR / "eval" / "device-verified.eval"
 LEGACY_MANIFEST_PATH = REPO_ROOT / "tools" / "corpus-manifest.tsv"
 HOLDOUT_MANIFEST_PATH = REPO_ROOT / "tools" / "corpus-holdout-v1.tsv"
@@ -45,7 +45,7 @@ def find_adb() -> str:
 def pull_database(adb: str) -> None:
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(
-        [adb, "exec-out", "run-as", PACKAGE, "cat", "databases/memento.db"],
+        [adb, "exec-out", "run-as", PACKAGE, "cat", "databases/screenshot_search.db"],
         capture_output=True,
     )
     if result.returncode != 0 or not result.stdout:
@@ -188,7 +188,7 @@ def main() -> None:
     count = export_eval()
     print(f"{count} kayit yazildi -> {EVAL_PATH}")
     print("Rapor icin: android/ altinda gradlew.bat :app:testDebugUnitTest "
-          '--tests "com.projectmemento.app.eval.ClassifierEvalTest" --rerun -i')
+          '--tests "com.screenshotsearch.app.eval.ClassifierEvalTest" --rerun -i')
 
 
 if __name__ == "__main__":

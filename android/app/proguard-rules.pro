@@ -2,8 +2,8 @@
 # Aşağıdaki kurallar yalnızca UYGULAMA KODUNUN yansıma ile erişilen kısımları içindir.
 
 # ViewModel yansıma ile oluşturuluyor:
-#     ViewModelProvider(this)[MementoViewModel::class.java]
-# R8 sınıf adını kısaltınca (örnek: MementoViewModel -> q11) ViewModelProvider
+#     ViewModelProvider(this)[ScreenshotSearchViewModel::class.java]
+# R8 sınıf adını kısaltınca (örnek: ScreenshotSearchViewModel -> q11) ViewModelProvider
 # (Application) yapıcısını bulamıyor ve uygulama AÇILIŞTA ÇÖKÜYOR:
 #     java.lang.RuntimeException: Cannot create an instance of class q11
 # Gerçek imzalı release kurulumunda yakalandı; debug build'de görünmüyordu. Dağıtımdan

@@ -1,4 +1,4 @@
-# Project Memento - Ingilizce kapsama korpusu v1
+# Screenshot Search - Ingilizce kapsama korpusu v1
 # Amac: siniflandiricinin Ingilizce genelleme acigini kapatmak.
 # id soneki: -d* = DEV (tuning hedefi), -h* = HOLDOUT v2 (kor olcum; tuning'de GORULMEZ).
 # Holdout v1'den FARKLI sayfalar secildi. intent tum satirlarda "-" (olcum disi).

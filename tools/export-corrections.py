@@ -21,10 +21,10 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-PACKAGE = "com.projectmemento.app"
+PACKAGE = "com.screenshotsearch.app"
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PRIVATE_DIR = REPO_ROOT / ".private-data"
-DB_PATH = PRIVATE_DIR / "device" / "memento.db"
+DB_PATH = PRIVATE_DIR / "device" / "screenshot_search.db"
 OUT_PATH = PRIVATE_DIR / "corrections" / "correction-events.tsv"
 
 
@@ -48,7 +48,7 @@ def find_adb() -> str:
 def pull_database(adb: str) -> None:
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     result = subprocess.run(
-        [adb, "exec-out", "run-as", PACKAGE, "cat", "databases/memento.db"],
+        [adb, "exec-out", "run-as", PACKAGE, "cat", "databases/screenshot_search.db"],
         capture_output=True,
     )
     if result.returncode != 0 or not result.stdout:

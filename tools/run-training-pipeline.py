@@ -20,8 +20,8 @@ import time
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-PACKAGE = "com.projectmemento.app"
-PREFS = "shared_prefs/memento_sync.xml"
+PACKAGE = "com.screenshotsearch.app"
+PREFS = "shared_prefs/screenshot_search_sync.xml"
 
 
 def find_adb() -> str:

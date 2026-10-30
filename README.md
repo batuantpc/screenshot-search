@@ -1,13 +1,13 @@
-# Project Memento
+# Screenshot Search
 
 Open-source Android-first MVP that turns a local screenshot library into searchable memory.
 
-> `Project Memento` is an internal codename, not an approved store name or final package
+> `Screenshot Search` is a plain working name, not an approved store name or final package
 > identity.
 
 ## Product contract
 
-Memento discovers Android screenshots, runs on-device OCR, and lets the user find an old
+Screenshot Search discovers Android screenshots, runs on-device OCR, and lets the user find an old
 screenshot with any remembered word or a date phrase.
 
 The product is deliberately search-first:
@@ -18,7 +18,7 @@ The product is deliberately search-first:
 4. Suggest a topic only when explicit evidence supports it; otherwise abstain.
 5. Let the user add or correct a topic and an optional reason-for-saving label.
 
-Automatic topic suggestions are helper metadata, not the retrieval boundary. Memento does
+Automatic topic suggestions are helper metadata, not the retrieval boundary. Screenshot Search does
 not infer why a screenshot was saved from its contents.
 
 ## Current status — 0.2.0

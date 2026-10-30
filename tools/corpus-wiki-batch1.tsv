@@ -1,4 +1,4 @@
-# Project Memento - Wikipedia tabanli egitim korpusu
+# Screenshot Search - Wikipedia tabanli egitim korpusu
 # Uretici: tools/generate-corpus-from-wikipedia.py (kategori API'si)
 # Amac: kural ezberi yerine VERIYLE egitim. TR+EN karisik.
 # intent tum satirlarda '-' (olculmez). sensitive=false (kamuya acik sayfalar).

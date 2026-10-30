@@ -22,11 +22,11 @@ val keystoreProperties: Map<String, String> = rootProject.file("keystore.propert
     ?: emptyMap()
 
 android {
-    namespace = "com.projectmemento.app"
+    namespace = "com.screenshotsearch.app"
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "com.projectmemento.app"
+        applicationId = "com.screenshotsearch.app"
         minSdk = 26
         targetSdk = 37
         versionCode = 4

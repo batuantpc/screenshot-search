@@ -1,6 +1,6 @@
-# Contributing to Project Memento
+# Contributing to Screenshot Search
 
-Thanks for helping improve Memento.
+Thanks for helping improve Screenshot Search.
 
 ## Before opening a pull request
 

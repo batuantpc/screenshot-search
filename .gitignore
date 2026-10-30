@@ -47,7 +47,7 @@ __pycache__/
 *.pyc
 
 # Ham Instagram disa aktarimi: katilimci verisi, hicbir kosulda Git'e girmez.
-memento-data/
+screenshot-search-data/
 
 # OS/editor noise
 .DS_Store
